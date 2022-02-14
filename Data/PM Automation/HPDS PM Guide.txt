@@ -1,0 +1,112 @@
+sab-fe.sh version:
+	cat /etc/SAB-UI/sab-fe.sh
+
+RC Firmware Version:
+	MegaCli64 Adpallinfo a0 | egrep 'Product|Serial No|FW Package|FW Version'
+
+StoreCLI Version:
+	storcli -v
+
+MegaCli64 Version:
+	MegaCli64 -v
+
+Kernel Version:
+	uname -r
+
+Fibre Software Module Version (SCST):
+	cat /etc/scst.conf
+
+Cache Vault Version:
+	MegaCli64 adpbbucmd a0 | egrep 'Module Version'
+OR
+	storcli /c0/cv show all | egrep 'Module Version'
+
+"No Cache Vault Date Command"
+
+FC Firmware Version:
+	modinfo qla2xxx | grep version
+
+"No iSCSI Firmware Command"
+
+rapidtier Version:
+	rapidtier version
+
+LVM Version:
+	lvm version
+
+
+
+Show IPMI ip address:
+	ipmicfg-linux.x86 -m
+Show IPMI Subnet Mask:
+	ipmicfg-linux.x86 -k
+Show IPMI Gateway IP Address:
+	ipmicfg-linux.x86 -g
+
+Setting IP Addresses for IPMI:
+	ipmitool lan set 1 ipaddr 192.168.68.3
+	ipmitool lan set 1 netmask 255.255.255.0
+	ipmitool lan set 1 defgw ipaddr 192.168.68.1
+
+IPMI BMC Firmware Version:
+	ipmicfg-linux.x86 -ver
+
+RC Serial Number:
+	MegaCli64 Adpallinfo a0 | egrep 'Product|Serial No|FW Package|FW Version'
+
+Motherboard Serial Number:
+	dmidecode | grep -A 2 -i x10drl
+
+Power Supplies Serial Number:
+	ipmicfg-linux.x86 -pminfo | egrep 'PWS Serial Number|PWS Module Number' | sort -u
+	dmidecode | grep -A 3 -i psu
+
+Emergency Spare:
+	MegaCli64 adpgetprop ENABLEEGHSP  a0
+
+RC CopyBack Setting:
+	MegaCli64 -AdpGetProp -CopyBackDsbl -a0 -Nolog
+
+Disks Power Saving:
+	first login with sabterminal:
+		disk show powersaving
+	then if both of the setting are disabled then pass.
+	else:
+		disk set powersaving --type=NoConfig --mode=on/off
+		disk set powersaving --type=hotspare --mode=on/off
+
+Auto Rebuild:
+	MegaCli64 -AdpAutoRbld -Enbl -a0
+
+
+Display info about virtual drives (raid drives) (l = Pool, A = Enclosure, 0 or All or 1 or ... = Id 0, 1, ..., All):
+	MegaCli64 ldinfo lAll AAll
+
+The file containing info about iSCSI and FC hosts and initiators and Access Control Groups:
+	cat /etc/scst.conf
+
+Disk Smart parameters:
+	MegaCli64 pdlist a0 | less
+	Scan all of the disks present in device:
+		smartctl --scan
+	Get the S.M.A.R.T. data of each disk:
+		smartctl -a "/dev/bus/0 -d megaraid,157"
+	Instead of the part in "" put the busId of any disk you want!
+
+Checking Fibre & iSCSI Modules:
+	lsmod | grep scst
+	lsmod | grep tgt
+
+Checking Rapidstore Modules being installed and loaded:
+	lsmod | grep rapid
+
+
+MegaCli64 pdlist a0 |egrep -i 'slot|other error count/predi...'
+
+
+dmidecode |grep Serial
+
+lspci |grep -i fibre
+
+MegaCli64 adpgetprop ENABLEEGHSP  a0
+:

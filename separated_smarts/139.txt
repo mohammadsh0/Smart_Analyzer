@@ -1,0 +1,63 @@
+Command smartctl -a /dev/bus/0 -d megaraid,139
+smartctl 6.2 2013-07-26 r3841 [x86_64-linux-3.10.0-327.36.3.el7.x86_64] (local build)
+Copyright (C) 2002-13, Bruce Allen, Christian Franke, www.smartmontools.org
+
+=== START OF INFORMATION SECTION ===
+Vendor:               SEAGATE
+Product:              ST8000NM0075
+Revision:             E003
+User Capacity:        8,001,563,222,016 bytes [8.00 TB]
+Logical block size:   512 bytes
+Physical block size:  4096 bytes
+Lowest aligned LBA:   0
+Logical block provisioning type unreported, LBPME=0, LBPRZ=0
+Rotation Rate:        7200 rpm
+Form Factor:          3.5 inches
+Logical Unit id:      0x5000c50094e067d7
+Serial number:        ZA19J6ED0000R8167A8N
+Device type:          disk
+Transport protocol:   SAS
+Local Time is:        Sun Nov  7 14:29:03 2021 IRST
+SMART support is:     Available - device has SMART capability.
+SMART support is:     Enabled
+Temperature Warning:  Enabled
+
+=== START OF READ SMART DATA SECTION ===
+SMART Health Status: OK
+
+Current Drive Temperature:     33 C
+Drive Trip Temperature:        60 C
+
+Manufactured in week 46 of year 2017
+Specified cycle count over device lifetime:  10000
+Accumulated start-stop cycles:  165
+Specified load-unload count over device lifetime:  300000
+Accumulated load-unload cycles:  996
+Elements in grown defect list: 0
+
+Vendor (Seagate) cache information
+Blocks sent to initiator = 2136338528
+Blocks received from initiator = 2227477272
+Blocks read from cache and sent to initiator = 3284305013
+Number of read and write commands whose size <= segment size = 65007716
+Number of read and write commands whose size > segment size = 193855
+
+Vendor (Seagate/Hitachi) factory information
+number of hours powered up = 10424.80
+number of minutes until next internal SMART test = 31
+
+Error counter log:
+Errors Corrected by           Total   Correction     Gigabytes    Total
+ECC          rereads/    errors   algorithm      processed    uncorrected
+fast | delayed   rewrites  corrected  invocations   [10^9 bytes]  errors
+read:   1552016208        0         0  1552016208          0     170418.596           0
+write:         0        0         0         0          0       3359.914           0
+verify:  1077421        0         0   1077421          0          0.000           0
+
+Non-medium error count:      118
+
+
+[GLTSD (Global Logging Target Save Disable) set. Enable Save with '-S on']
+No self-tests have been logged
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

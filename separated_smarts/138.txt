@@ -1,0 +1,85 @@
+Command smartctl -a /dev/bus/0 -d megaraid,138
+smartctl 6.2 2013-07-26 r3841 [x86_64-linux-3.10.0-327.36.3.el7.x86_64] (local build)
+Copyright (C) 2002-13, Bruce Allen, Christian Franke, www.smartmontools.org
+
+=== START OF INFORMATION SECTION ===
+Vendor:               SEAGATE
+Product:              ST8000NM0075
+Revision:             E003
+User Capacity:        8,001,563,222,016 bytes [8.00 TB]
+Logical block size:   512 bytes
+Physical block size:  4096 bytes
+Lowest aligned LBA:   0
+Logical block provisioning type unreported, LBPME=0, LBPRZ=0
+Rotation Rate:        7200 rpm
+Form Factor:          3.5 inches
+Logical Unit id:      0x5000c50094d50b3f
+Serial number:        ZA19GJMZ0000R814FDCR
+Device type:          disk
+Transport protocol:   SAS
+Local Time is:        Sun Nov  7 14:29:01 2021 IRST
+SMART support is:     Available - device has SMART capability.
+SMART support is:     Enabled
+Temperature Warning:  Enabled
+
+=== START OF READ SMART DATA SECTION ===
+SMART Health Status: OK
+
+Current Drive Temperature:     34 C
+Drive Trip Temperature:        60 C
+
+Manufactured in week 44 of year 2017
+Specified cycle count over device lifetime:  10000
+Accumulated start-stop cycles:  186
+Specified load-unload count over device lifetime:  300000
+Accumulated load-unload cycles:  32325
+Elements in grown defect list: 0
+
+Vendor (Seagate) cache information
+Blocks sent to initiator = 2619034184
+Blocks received from initiator = 1442186120
+Blocks read from cache and sent to initiator = 54208757
+Number of read and write commands whose size <= segment size = 63128846
+Number of read and write commands whose size > segment size = 191343
+
+Vendor (Seagate/Hitachi) factory information
+number of hours powered up = 13251.07
+number of minutes until next internal SMART test = 32
+
+Error counter log:
+Errors Corrected by           Total   Correction     Gigabytes    Total
+ECC          rereads/    errors   algorithm      processed    uncorrected
+fast | delayed   rewrites  corrected  invocations   [10^9 bytes]  errors
+read:   602115325        0         0  602115325          0     168466.713           0
+write:         0        0         0         0          0      13956.292           0
+verify:  1095046        0         0   1095046          0          0.000           0
+
+Non-medium error count:      209
+
+
+[GLTSD (Global Logging Target Save Disable) set. Enable Save with '-S on']
+SMART Self-test log
+Num  Test              Status                 segment  LifeTime  LBA_first_err [SK ASC ASQ]
+Description                              number   (hours)
+# 1  Background long   Completed                   -    2995                 - [-   -    -]
+# 2  Background long   Completed                   -    2934                 - [-   -    -]
+# 3  Background long   Completed                   -    2817                 - [-   -    -]
+# 4  Background long   Completed                   -    2672                 - [-   -    -]
+# 5  Background long   Completed                   -    2603                 - [-   -    -]
+# 6  Background long   Completed                   -    2584                 - [-   -    -]
+# 7  Background long   Completed                   -    2554                 - [-   -    -]
+# 8  Background long   Aborted (device reset ?)    -    2503                 - [-   -    -]
+# 9  Background long   Completed                   -    2485                 - [-   -    -]
+#10  Background long   Completed                   -    2405                 - [-   -    -]
+#11  Background long   Aborted (device reset ?)    -    2392                 - [-   -    -]
+#12  Background long   Completed                   -    2223                 - [-   -    -]
+#13  Background long   Completed                   -    2148                 - [-   -    -]
+#14  Background long   Completed                   -    2088                 - [-   -    -]
+#15  Background long   Completed                   -    2032                 - [-   -    -]
+#16  Background long   Completed                   -    2006                 - [-   -    -]
+#17  Background long   Completed                   -     104                 - [-   -    -]
+#18  Background long   Aborted (by user command)   -      92                 - [-   -    -]
+#19  Background long   Completed                   -      31                 - [-   -    -]
+Long (extended) Self Test duration: 40662 seconds [677.7 minutes]
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

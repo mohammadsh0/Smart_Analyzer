@@ -1,0 +1,28 @@
+cat /etc/SAB-UI/sab_fe.sh
+
+Megacli64 pdlist a0 |egrep -i 'slot|other error count/predi...'
+
+MegaCli64 -AdpAutoRbld -Enbl -a0
+
+MegaCli64 Adpallinfo a0 | egrep 'Product|Serial No|FW Package|FW Version'
+
+dmidecode |grep Serial
+
+modinfo qla2xxx | grep version
+
+lspci |grep -i fibre
+
+lsmod | grep scst
+
+MegaCli64 -v
+
+storecli -v
+
+MegaCli64 -AdpGetProp -CopyBackDsbl -a0 -Nolog
+
+MegaCli64 adpgetprop ENABLEEGHSP  a0
+
+disk set powersaving --type=NoConfig --mode=on/off
+disk set powersaving --type=hotspare --mode=on/off
+
+uname -r

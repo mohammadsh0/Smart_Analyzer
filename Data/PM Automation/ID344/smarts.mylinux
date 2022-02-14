@@ -1,0 +1,2464 @@
+Command smartctl -a /dev/bus/0 -d megaraid,45 
+smartctl 6.2 2013-07-26 r3841 [x86_64-linux-4.14.34-1] (local build)
+Copyright (C) 2002-13, Bruce Allen, Christian Franke, www.smartmontools.org
+
+/dev/bus/0 [megaraid_disk_45] [SAT]: Device open changed type from 'megaraid,45' to 'sat+megaraid,45'
+=== START OF INFORMATION SECTION ===
+Device Model:     Samsung SSD 860 PRO 256GB
+Serial Number:    S42VNF0K412246T
+LU WWN Device Id: 5 002538 e40323f76
+Firmware Version: RVM01B6Q
+User Capacity:    256,060,514,304 bytes [256 GB]
+Sector Size:      512 bytes logical/physical
+Rotation Rate:    Solid State Device
+Device is:        Not in smartctl database [for details use: -P showall]
+ATA Version is:   Unknown(0x09fc) (unknown minor revision code: 0x005e)
+SATA Version is:  SATA 3.1, 6.0 Gb/s (current: 6.0 Gb/s)
+Local Time is:    Sat Aug  7 13:09:25 2021 IRDT
+SMART support is: Available - device has SMART capability.
+SMART support is: Enabled
+
+=== START OF READ SMART DATA SECTION ===
+SMART overall-health self-assessment test result: PASSED
+Warning: This result is based on an Attribute check.
+
+General SMART Values:
+Offline data collection status:  (0x00)	Offline data collection activity
+					was never started.
+					Auto Offline Data Collection: Disabled.
+Self-test execution status:      (   0)	The previous self-test routine completed
+					without error or no self-test has ever 
+					been run.
+Total time to complete Offline 
+data collection: 		(    0) seconds.
+Offline data collection
+capabilities: 			 (0x53) SMART execute Offline immediate.
+					Auto Offline data collection on/off support.
+					Suspend Offline collection upon new
+					command.
+					No Offline surface scan supported.
+					Self-test supported.
+					No Conveyance Self-test supported.
+					Selective Self-test supported.
+SMART capabilities:            (0x0003)	Saves SMART data before entering
+					power-saving mode.
+					Supports SMART auto save timer.
+Error logging capability:        (0x01)	Error logging supported.
+					General Purpose Logging supported.
+Short self-test routine 
+recommended polling time: 	 (   2) minutes.
+Extended self-test routine
+recommended polling time: 	 (  85) minutes.
+SCT capabilities: 	       (0x003d)	SCT Status supported.
+					SCT Error Recovery Control supported.
+					SCT Feature Control supported.
+					SCT Data Table supported.
+
+SMART Attributes Data Structure revision number: 1
+Vendor Specific SMART Attributes with Thresholds:
+ID# ATTRIBUTE_NAME          FLAG     VALUE WORST THRESH TYPE      UPDATED  WHEN_FAILED RAW_VALUE
+  5 Reallocated_Sector_Ct   0x0033   100   100   010    Pre-fail  Always       -       0
+  9 Power_On_Hours          0x0032   096   096   000    Old_age   Always       -       17195
+ 12 Power_Cycle_Count       0x0032   099   099   000    Old_age   Always       -       41
+177 Wear_Leveling_Count     0x0013   083   083   000    Pre-fail  Always       -       377
+179 Used_Rsvd_Blk_Cnt_Tot   0x0013   100   100   010    Pre-fail  Always       -       0
+181 Program_Fail_Cnt_Total  0x0032   100   100   010    Old_age   Always       -       0
+182 Erase_Fail_Count_Total  0x0032   100   100   010    Old_age   Always       -       0
+183 Runtime_Bad_Block       0x0013   100   100   010    Pre-fail  Always       -       0
+187 Reported_Uncorrect      0x0032   100   100   000    Old_age   Always       -       0
+190 Airflow_Temperature_Cel 0x0032   073   045   000    Old_age   Always       -       27
+195 Hardware_ECC_Recovered  0x001a   200   200   000    Old_age   Always       -       0
+199 UDMA_CRC_Error_Count    0x003e   100   100   000    Old_age   Always       -       0
+235 Unknown_Attribute       0x0012   099   099   000    Old_age   Always       -       23
+241 Total_LBAs_Written      0x0032   099   099   000    Old_age   Always       -       92848410985
+
+SMART Error Log Version: 1
+No Errors Logged
+
+SMART Self-test log structure revision number 1
+No self-tests have been logged.  [To run self-tests, use: smartctl -t]
+
+
+SMART Selective self-test log data structure revision number 1
+ SPAN  MIN_LBA  MAX_LBA  CURRENT_TEST_STATUS
+    1        0        0  Not_testing
+    2        0        0  Not_testing
+    3        0        0  Not_testing
+    4        0        0  Not_testing
+    5        0        0  Not_testing
+Selective self-test flags (0x0):
+  After scanning selected spans, do NOT read-scan remainder of disk.
+If Selective self-test is pending on power-up, resume after 0 minute delay.
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Command smartctl -a /dev/bus/0 -d megaraid,44 
+smartctl 6.2 2013-07-26 r3841 [x86_64-linux-4.14.34-1] (local build)
+Copyright (C) 2002-13, Bruce Allen, Christian Franke, www.smartmontools.org
+
+/dev/bus/0 [megaraid_disk_44] [SAT]: Device open changed type from 'megaraid,44' to 'sat+megaraid,44'
+=== START OF INFORMATION SECTION ===
+Device Model:     Samsung SSD 860 PRO 256GB
+Serial Number:    S42VNF0K412684F
+LU WWN Device Id: 5 002538 e40324154
+Firmware Version: RVM01B6Q
+User Capacity:    256,060,514,304 bytes [256 GB]
+Sector Size:      512 bytes logical/physical
+Rotation Rate:    Solid State Device
+Device is:        Not in smartctl database [for details use: -P showall]
+ATA Version is:   Unknown(0x09fc) (unknown minor revision code: 0x005e)
+SATA Version is:  SATA 3.1, 6.0 Gb/s (current: 6.0 Gb/s)
+Local Time is:    Sat Aug  7 13:09:25 2021 IRDT
+SMART support is: Available - device has SMART capability.
+SMART support is: Enabled
+
+=== START OF READ SMART DATA SECTION ===
+SMART overall-health self-assessment test result: PASSED
+Warning: This result is based on an Attribute check.
+
+General SMART Values:
+Offline data collection status:  (0x00)	Offline data collection activity
+					was never started.
+					Auto Offline Data Collection: Disabled.
+Self-test execution status:      (   0)	The previous self-test routine completed
+					without error or no self-test has ever 
+					been run.
+Total time to complete Offline 
+data collection: 		(    0) seconds.
+Offline data collection
+capabilities: 			 (0x53) SMART execute Offline immediate.
+					Auto Offline data collection on/off support.
+					Suspend Offline collection upon new
+					command.
+					No Offline surface scan supported.
+					Self-test supported.
+					No Conveyance Self-test supported.
+					Selective Self-test supported.
+SMART capabilities:            (0x0003)	Saves SMART data before entering
+					power-saving mode.
+					Supports SMART auto save timer.
+Error logging capability:        (0x01)	Error logging supported.
+					General Purpose Logging supported.
+Short self-test routine 
+recommended polling time: 	 (   2) minutes.
+Extended self-test routine
+recommended polling time: 	 (  85) minutes.
+SCT capabilities: 	       (0x003d)	SCT Status supported.
+					SCT Error Recovery Control supported.
+					SCT Feature Control supported.
+					SCT Data Table supported.
+
+SMART Attributes Data Structure revision number: 1
+Vendor Specific SMART Attributes with Thresholds:
+ID# ATTRIBUTE_NAME          FLAG     VALUE WORST THRESH TYPE      UPDATED  WHEN_FAILED RAW_VALUE
+  5 Reallocated_Sector_Ct   0x0033   100   100   010    Pre-fail  Always       -       0
+  9 Power_On_Hours          0x0032   096   096   000    Old_age   Always       -       17195
+ 12 Power_Cycle_Count       0x0032   099   099   000    Old_age   Always       -       41
+177 Wear_Leveling_Count     0x0013   083   083   000    Pre-fail  Always       -       372
+179 Used_Rsvd_Blk_Cnt_Tot   0x0013   100   100   010    Pre-fail  Always       -       0
+181 Program_Fail_Cnt_Total  0x0032   100   100   010    Old_age   Always       -       0
+182 Erase_Fail_Count_Total  0x0032   100   100   010    Old_age   Always       -       0
+183 Runtime_Bad_Block       0x0013   100   100   010    Pre-fail  Always       -       0
+187 Reported_Uncorrect      0x0032   100   100   000    Old_age   Always       -       0
+190 Airflow_Temperature_Cel 0x0032   073   044   000    Old_age   Always       -       27
+195 Hardware_ECC_Recovered  0x001a   200   200   000    Old_age   Always       -       0
+199 UDMA_CRC_Error_Count    0x003e   099   099   000    Old_age   Always       -       1
+235 Unknown_Attribute       0x0012   099   099   000    Old_age   Always       -       22
+241 Total_LBAs_Written      0x0032   099   099   000    Old_age   Always       -       92851098617
+
+SMART Error Log Version: 1
+No Errors Logged
+
+SMART Self-test log structure revision number 1
+No self-tests have been logged.  [To run self-tests, use: smartctl -t]
+
+
+SMART Selective self-test log data structure revision number 1
+ SPAN  MIN_LBA  MAX_LBA  CURRENT_TEST_STATUS
+    1        0        0  Not_testing
+    2        0        0  Not_testing
+    3        0        0  Not_testing
+    4        0        0  Not_testing
+    5        0        0  Not_testing
+Selective self-test flags (0x0):
+  After scanning selected spans, do NOT read-scan remainder of disk.
+If Selective self-test is pending on power-up, resume after 0 minute delay.
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Command smartctl -a /dev/bus/0 -d megaraid,109 
+smartctl 6.2 2013-07-26 r3841 [x86_64-linux-4.14.34-1] (local build)
+Copyright (C) 2002-13, Bruce Allen, Christian Franke, www.smartmontools.org
+
+=== START OF INFORMATION SECTION ===
+Vendor:               SEAGATE
+Product:              ST8000NM0075
+Revision:             E003
+User Capacity:        8,001,563,222,016 bytes [8.00 TB]
+Logical block size:   512 bytes
+Physical block size:  4096 bytes
+Lowest aligned LBA:   0
+Logical block provisioning type unreported, LBPME=0, LBPRZ=0
+Rotation Rate:        7200 rpm
+Form Factor:          3.5 inches
+Logical Unit id:      0x5000c50094cabe87
+Serial number:        ZA19CCSJ0000R814FEL6
+Device type:          disk
+Transport protocol:   SAS
+Local Time is:        Sat Aug  7 13:09:38 2021 IRDT
+SMART support is:     Available - device has SMART capability.
+SMART support is:     Enabled
+Temperature Warning:  Enabled
+
+=== START OF READ SMART DATA SECTION ===
+SMART Health Status: OK
+
+Current Drive Temperature:     25 C
+Drive Trip Temperature:        60 C
+
+Manufactured in week 44 of year 2017
+Specified cycle count over device lifetime:  10000
+Accumulated start-stop cycles:  168
+Specified load-unload count over device lifetime:  300000
+Accumulated load-unload cycles:  511
+Elements in grown defect list: 0
+
+Vendor (Seagate) cache information
+  Blocks sent to initiator = 1824
+  Blocks received from initiator = 0
+  Blocks read from cache and sent to initiator = 16
+  Number of read and write commands whose size <= segment size = 28
+  Number of read and write commands whose size > segment size = 0
+
+Vendor (Seagate/Hitachi) factory information
+  number of hours powered up = 9048.42
+  number of minutes until next internal SMART test = 43
+
+Error counter log:
+           Errors Corrected by           Total   Correction     Gigabytes    Total
+               ECC          rereads/    errors   algorithm      processed    uncorrected
+           fast | delayed   rewrites  corrected  invocations   [10^9 bytes]  errors
+read:     153256        0         0    153256          0          0.001           0
+write:         0        0         0         0          0          0.023           0
+
+Non-medium error count:        0
+
+
+[GLTSD (Global Logging Target Save Disable) set. Enable Save with '-S on']
+SMART Self-test log
+Num  Test              Status                 segment  LifeTime  LBA_first_err [SK ASC ASQ]
+     Description                              number   (hours)
+# 1  Background long   Completed                   -     103                 - [-   -    -]
+# 2  Background long   Completed                   -      20                 - [-   -    -]
+Long (extended) Self Test duration: 43458 seconds [724.3 minutes]
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Command smartctl -a /dev/bus/0 -d megaraid,108 
+smartctl 6.2 2013-07-26 r3841 [x86_64-linux-4.14.34-1] (local build)
+Copyright (C) 2002-13, Bruce Allen, Christian Franke, www.smartmontools.org
+
+=== START OF INFORMATION SECTION ===
+Vendor:               SEAGATE
+Product:              ST8000NM0075
+Revision:             E003
+User Capacity:        8,001,563,222,016 bytes [8.00 TB]
+Logical block size:   512 bytes
+Physical block size:  4096 bytes
+Lowest aligned LBA:   0
+Logical block provisioning type unreported, LBPME=0, LBPRZ=0
+Rotation Rate:        7200 rpm
+Form Factor:          3.5 inches
+Logical Unit id:      0x5000c50094b47b3b
+Serial number:        ZA19609T0000R811X77U
+Device type:          disk
+Transport protocol:   SAS
+Local Time is:        Sat Aug  7 13:09:55 2021 IRDT
+SMART support is:     Available - device has SMART capability.
+SMART support is:     Enabled
+Temperature Warning:  Enabled
+
+=== START OF READ SMART DATA SECTION ===
+SMART Health Status: OK
+
+Current Drive Temperature:     26 C
+Drive Trip Temperature:        60 C
+
+Manufactured in week 44 of year 2017
+Specified cycle count over device lifetime:  10000
+Accumulated start-stop cycles:  246
+Specified load-unload count over device lifetime:  300000
+Accumulated load-unload cycles:  432
+Elements in grown defect list: 0
+
+Vendor (Seagate) cache information
+  Blocks sent to initiator = 1936
+  Blocks received from initiator = 0
+  Blocks read from cache and sent to initiator = 17
+  Number of read and write commands whose size <= segment size = 30
+  Number of read and write commands whose size > segment size = 0
+
+Vendor (Seagate/Hitachi) factory information
+  number of hours powered up = 9065.65
+  number of minutes until next internal SMART test = 42
+
+Error counter log:
+           Errors Corrected by           Total   Correction     Gigabytes    Total
+               ECC          rereads/    errors   algorithm      processed    uncorrected
+           fast | delayed   rewrites  corrected  invocations   [10^9 bytes]  errors
+read:     213375        0         0    213375          0          0.001           0
+write:         0        0         0         0          0          0.024           0
+
+Non-medium error count:        4
+
+
+[GLTSD (Global Logging Target Save Disable) set. Enable Save with '-S on']
+SMART Self-test log
+Num  Test              Status                 segment  LifeTime  LBA_first_err [SK ASC ASQ]
+     Description                              number   (hours)
+# 1  Background long   Completed                   -     120                 - [-   -    -]
+# 2  Background long   Completed                   -      20                 - [-   -    -]
+Long (extended) Self Test duration: 40725 seconds [678.8 minutes]
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Command smartctl -a /dev/bus/0 -d megaraid,107 
+smartctl 6.2 2013-07-26 r3841 [x86_64-linux-4.14.34-1] (local build)
+Copyright (C) 2002-13, Bruce Allen, Christian Franke, www.smartmontools.org
+
+=== START OF INFORMATION SECTION ===
+Vendor:               SEAGATE
+Product:              ST8000NM0075
+Revision:             E003
+User Capacity:        8,001,563,222,016 bytes [8.00 TB]
+Logical block size:   512 bytes
+Physical block size:  4096 bytes
+Lowest aligned LBA:   0
+Logical block provisioning type unreported, LBPME=0, LBPRZ=0
+Rotation Rate:        7200 rpm
+Form Factor:          3.5 inches
+Logical Unit id:      0x5000c50094cabd97
+Serial number:        ZA19CCST0000R814TL62
+Device type:          disk
+Transport protocol:   SAS
+Local Time is:        Sat Aug  7 13:10:12 2021 IRDT
+SMART support is:     Available - device has SMART capability.
+SMART support is:     Enabled
+Temperature Warning:  Enabled
+
+=== START OF READ SMART DATA SECTION ===
+SMART Health Status: OK
+
+Current Drive Temperature:     26 C
+Drive Trip Temperature:        60 C
+
+Manufactured in week 44 of year 2017
+Specified cycle count over device lifetime:  10000
+Accumulated start-stop cycles:  169
+Specified load-unload count over device lifetime:  300000
+Accumulated load-unload cycles:  351
+Elements in grown defect list: 0
+
+Vendor (Seagate) cache information
+  Blocks sent to initiator = 1912
+  Blocks received from initiator = 0
+  Blocks read from cache and sent to initiator = 15
+  Number of read and write commands whose size <= segment size = 30
+  Number of read and write commands whose size > segment size = 0
+
+Vendor (Seagate/Hitachi) factory information
+  number of hours powered up = 9065.62
+  number of minutes until next internal SMART test = 42
+
+Error counter log:
+           Errors Corrected by           Total   Correction     Gigabytes    Total
+               ECC          rereads/    errors   algorithm      processed    uncorrected
+           fast | delayed   rewrites  corrected  invocations   [10^9 bytes]  errors
+read:     193219        0         0    193219          0          0.001           0
+write:         0        0         0         0          0          0.024           0
+
+Non-medium error count:        1
+
+
+[GLTSD (Global Logging Target Save Disable) set. Enable Save with '-S on']
+SMART Self-test log
+Num  Test              Status                 segment  LifeTime  LBA_first_err [SK ASC ASQ]
+     Description                              number   (hours)
+# 1  Background long   Completed                   -     120                 - [-   -    -]
+# 2  Background long   Completed                   -      20                 - [-   -    -]
+Long (extended) Self Test duration: 43637 seconds [727.3 minutes]
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Command smartctl -a /dev/bus/0 -d megaraid,106 
+smartctl 6.2 2013-07-26 r3841 [x86_64-linux-4.14.34-1] (local build)
+Copyright (C) 2002-13, Bruce Allen, Christian Franke, www.smartmontools.org
+
+=== START OF INFORMATION SECTION ===
+Vendor:               SEAGATE
+Product:              ST8000NM0075
+Revision:             E003
+User Capacity:        8,001,563,222,016 bytes [8.00 TB]
+Logical block size:   512 bytes
+Physical block size:  4096 bytes
+Lowest aligned LBA:   0
+Logical block provisioning type unreported, LBPME=0, LBPRZ=0
+Rotation Rate:        7200 rpm
+Form Factor:          3.5 inches
+Logical Unit id:      0x5000c50094cadfbf
+Serial number:        ZA19DNW80000R814UXK6
+Device type:          disk
+Transport protocol:   SAS
+Local Time is:        Sat Aug  7 13:10:28 2021 IRDT
+SMART support is:     Available - device has SMART capability.
+SMART support is:     Enabled
+Temperature Warning:  Enabled
+
+=== START OF READ SMART DATA SECTION ===
+SMART Health Status: OK
+
+Current Drive Temperature:     25 C
+Drive Trip Temperature:        60 C
+
+Manufactured in week 44 of year 2017
+Specified cycle count over device lifetime:  10000
+Accumulated start-stop cycles:  171
+Specified load-unload count over device lifetime:  300000
+Accumulated load-unload cycles:  353
+Elements in grown defect list: 0
+
+Vendor (Seagate) cache information
+  Blocks sent to initiator = 1936
+  Blocks received from initiator = 0
+  Blocks read from cache and sent to initiator = 18
+  Number of read and write commands whose size <= segment size = 30
+  Number of read and write commands whose size > segment size = 0
+
+Vendor (Seagate/Hitachi) factory information
+  number of hours powered up = 9065.68
+  number of minutes until next internal SMART test = 42
+
+Error counter log:
+           Errors Corrected by           Total   Correction     Gigabytes    Total
+               ECC          rereads/    errors   algorithm      processed    uncorrected
+           fast | delayed   rewrites  corrected  invocations   [10^9 bytes]  errors
+read:     188454        0         0    188454          0          0.001           0
+write:         0        0         0         0          0          0.024           0
+
+Non-medium error count:        1
+
+
+[GLTSD (Global Logging Target Save Disable) set. Enable Save with '-S on']
+SMART Self-test log
+Num  Test              Status                 segment  LifeTime  LBA_first_err [SK ASC ASQ]
+     Description                              number   (hours)
+# 1  Background long   Completed                   -     120                 - [-   -    -]
+# 2  Background long   Completed                   -      20                 - [-   -    -]
+Long (extended) Self Test duration: 43085 seconds [718.1 minutes]
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Command smartctl -a /dev/bus/0 -d megaraid,83 
+smartctl 6.2 2013-07-26 r3841 [x86_64-linux-4.14.34-1] (local build)
+Copyright (C) 2002-13, Bruce Allen, Christian Franke, www.smartmontools.org
+
+=== START OF INFORMATION SECTION ===
+Vendor:               SEAGATE
+Product:              ST8000NM0075
+Revision:             E003
+User Capacity:        8,001,563,222,016 bytes [8.00 TB]
+Logical block size:   512 bytes
+Physical block size:  4096 bytes
+Lowest aligned LBA:   0
+Logical block provisioning type unreported, LBPME=0, LBPRZ=0
+Rotation Rate:        7200 rpm
+Form Factor:          3.5 inches
+Logical Unit id:      0x5000c50094e9995b
+Serial number:        ZA19KPED0000R816NWEJ
+Device type:          disk
+Transport protocol:   SAS
+Local Time is:        Sat Aug  7 13:10:29 2021 IRDT
+SMART support is:     Available - device has SMART capability.
+SMART support is:     Enabled
+Temperature Warning:  Enabled
+
+=== START OF READ SMART DATA SECTION ===
+SMART Health Status: OK
+
+Current Drive Temperature:     33 C
+Drive Trip Temperature:        60 C
+
+Manufactured in week 46 of year 2017
+Specified cycle count over device lifetime:  10000
+Accumulated start-stop cycles:  68
+Specified load-unload count over device lifetime:  300000
+Accumulated load-unload cycles:  2506
+Elements in grown defect list: 0
+
+Vendor (Seagate) cache information
+  Blocks sent to initiator = 1680043096
+  Blocks received from initiator = 3008282712
+  Blocks read from cache and sent to initiator = 3044207777
+  Number of read and write commands whose size <= segment size = 234627849
+  Number of read and write commands whose size > segment size = 153497
+
+Vendor (Seagate/Hitachi) factory information
+  number of hours powered up = 17877.17
+  number of minutes until next internal SMART test = 38
+
+Error counter log:
+           Errors Corrected by           Total   Correction     Gigabytes    Total
+               ECC          rereads/    errors   algorithm      processed    uncorrected
+           fast | delayed   rewrites  corrected  invocations   [10^9 bytes]  errors
+read:   3357223303        0         0  3357223303          0     799105.624           0
+write:         0        0         0         0          0      10351.771           0
+verify: 10366493        0         0  10366493          0          0.000           0
+
+Non-medium error count:      321
+
+
+[GLTSD (Global Logging Target Save Disable) set. Enable Save with '-S on']
+SMART Self-test log
+Num  Test              Status                 segment  LifeTime  LBA_first_err [SK ASC ASQ]
+     Description                              number   (hours)
+# 1  Background long   Completed                   -      13                 - [-   -    -]
+Long (extended) Self Test duration: 42651 seconds [710.9 minutes]
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Command smartctl -a /dev/bus/0 -d megaraid,94 
+smartctl 6.2 2013-07-26 r3841 [x86_64-linux-4.14.34-1] (local build)
+Copyright (C) 2002-13, Bruce Allen, Christian Franke, www.smartmontools.org
+
+=== START OF INFORMATION SECTION ===
+Vendor:               SEAGATE
+Product:              ST8000NM0075
+Revision:             E003
+User Capacity:        8,001,563,222,016 bytes [8.00 TB]
+Logical block size:   512 bytes
+Physical block size:  4096 bytes
+Lowest aligned LBA:   0
+Logical block provisioning type unreported, LBPME=0, LBPRZ=0
+Rotation Rate:        7200 rpm
+Form Factor:          3.5 inches
+Logical Unit id:      0x5000c50094b53657
+Serial number:        ZA197JE60000R746UCPS
+Device type:          disk
+Transport protocol:   SAS
+Local Time is:        Sat Aug  7 13:10:29 2021 IRDT
+SMART support is:     Available - device has SMART capability.
+SMART support is:     Enabled
+Temperature Warning:  Enabled
+
+=== START OF READ SMART DATA SECTION ===
+SMART Health Status: OK
+
+Current Drive Temperature:     35 C
+Drive Trip Temperature:        60 C
+
+Manufactured in week 43 of year 2017
+Specified cycle count over device lifetime:  10000
+Accumulated start-stop cycles:  144
+Specified load-unload count over device lifetime:  300000
+Accumulated load-unload cycles:  8290
+Elements in grown defect list: 0
+
+Vendor (Seagate) cache information
+  Blocks sent to initiator = 3241233344
+  Blocks received from initiator = 3020830168
+  Blocks read from cache and sent to initiator = 122255329
+  Number of read and write commands whose size <= segment size = 228384059
+  Number of read and write commands whose size > segment size = 152704
+
+Vendor (Seagate/Hitachi) factory information
+  number of hours powered up = 17747.03
+  number of minutes until next internal SMART test = 19
+
+Error counter log:
+           Errors Corrected by           Total   Correction     Gigabytes    Total
+               ECC          rereads/    errors   algorithm      processed    uncorrected
+           fast | delayed   rewrites  corrected  invocations   [10^9 bytes]  errors
+read:   1650424791        0         0  1650424791          0     795506.907           0
+write:         0        0         0         0          0      10359.565           0
+verify: 10361074        0         0  10361074          0          0.000           0
+
+Non-medium error count:      389
+
+
+[GLTSD (Global Logging Target Save Disable) set. Enable Save with '-S on']
+SMART Self-test log
+Num  Test              Status                 segment  LifeTime  LBA_first_err [SK ASC ASQ]
+     Description                              number   (hours)
+# 1  Background long   Completed                   -      12                 - [-   -    -]
+Long (extended) Self Test duration: 41912 seconds [698.5 minutes]
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Command smartctl -a /dev/bus/0 -d megaraid,101 
+smartctl 6.2 2013-07-26 r3841 [x86_64-linux-4.14.34-1] (local build)
+Copyright (C) 2002-13, Bruce Allen, Christian Franke, www.smartmontools.org
+
+=== START OF INFORMATION SECTION ===
+Vendor:               SEAGATE
+Product:              ST8000NM0075
+Revision:             E003
+User Capacity:        8,001,563,222,016 bytes [8.00 TB]
+Logical block size:   512 bytes
+Physical block size:  4096 bytes
+Lowest aligned LBA:   0
+Logical block provisioning type unreported, LBPME=0, LBPRZ=0
+Rotation Rate:        7200 rpm
+Form Factor:          3.5 inches
+Logical Unit id:      0x5000c50094b49de7
+Serial number:        ZA19603R0000R806UY8K
+Device type:          disk
+Transport protocol:   SAS
+Local Time is:        Sat Aug  7 13:10:30 2021 IRDT
+SMART support is:     Available - device has SMART capability.
+SMART support is:     Enabled
+Temperature Warning:  Enabled
+
+=== START OF READ SMART DATA SECTION ===
+SMART Health Status: OK
+
+Current Drive Temperature:     36 C
+Drive Trip Temperature:        60 C
+
+Manufactured in week 43 of year 2017
+Specified cycle count over device lifetime:  10000
+Accumulated start-stop cycles:  145
+Specified load-unload count over device lifetime:  300000
+Accumulated load-unload cycles:  8383
+Elements in grown defect list: 0
+
+Vendor (Seagate) cache information
+  Blocks sent to initiator = 4268494584
+  Blocks received from initiator = 3015932344
+  Blocks read from cache and sent to initiator = 2113685745
+  Number of read and write commands whose size <= segment size = 230690728
+  Number of read and write commands whose size > segment size = 151363
+
+Vendor (Seagate/Hitachi) factory information
+  number of hours powered up = 17746.87
+  number of minutes until next internal SMART test = 43
+
+Error counter log:
+           Errors Corrected by           Total   Correction     Gigabytes    Total
+               ECC          rereads/    errors   algorithm      processed    uncorrected
+           fast | delayed   rewrites  corrected  invocations   [10^9 bytes]  errors
+read:   2932828162        0         0  2932828162          0     798231.888           0
+write:         0        0         0         0          0      10357.919           0
+verify: 10936798        0         0  10936798          0          0.000           0
+
+Non-medium error count:      378
+
+
+[GLTSD (Global Logging Target Save Disable) set. Enable Save with '-S on']
+SMART Self-test log
+Num  Test              Status                 segment  LifeTime  LBA_first_err [SK ASC ASQ]
+     Description                              number   (hours)
+# 1  Background long   Completed                   -      12                 - [-   -    -]
+Long (extended) Self Test duration: 40150 seconds [669.2 minutes]
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Command smartctl -a /dev/bus/0 -d megaraid,96 
+smartctl 6.2 2013-07-26 r3841 [x86_64-linux-4.14.34-1] (local build)
+Copyright (C) 2002-13, Bruce Allen, Christian Franke, www.smartmontools.org
+
+=== START OF INFORMATION SECTION ===
+Vendor:               SEAGATE
+Product:              ST8000NM0075
+Revision:             E003
+User Capacity:        8,001,563,222,016 bytes [8.00 TB]
+Logical block size:   512 bytes
+Physical block size:  4096 bytes
+Lowest aligned LBA:   0
+Logical block provisioning type unreported, LBPME=0, LBPRZ=0
+Rotation Rate:        7200 rpm
+Form Factor:          3.5 inches
+Logical Unit id:      0x5000c50094e4f137
+Serial number:        ZA19K3MZ0000R816NWR0
+Device type:          disk
+Transport protocol:   SAS
+Local Time is:        Sat Aug  7 13:10:30 2021 IRDT
+SMART support is:     Available - device has SMART capability.
+SMART support is:     Enabled
+Temperature Warning:  Enabled
+
+=== START OF READ SMART DATA SECTION ===
+SMART Health Status: OK
+
+Current Drive Temperature:     35 C
+Drive Trip Temperature:        60 C
+
+Manufactured in week 46 of year 2017
+Specified cycle count over device lifetime:  10000
+Accumulated start-stop cycles:  67
+Specified load-unload count over device lifetime:  300000
+Accumulated load-unload cycles:  10299
+Elements in grown defect list: 0
+
+Vendor (Seagate) cache information
+  Blocks sent to initiator = 1899611960
+  Blocks received from initiator = 3013786416
+  Blocks read from cache and sent to initiator = 3406019005
+  Number of read and write commands whose size <= segment size = 227328915
+  Number of read and write commands whose size > segment size = 150891
+
+Vendor (Seagate/Hitachi) factory information
+  number of hours powered up = 17747.10
+  number of minutes until next internal SMART test = 47
+
+Error counter log:
+           Errors Corrected by           Total   Correction     Gigabytes    Total
+               ECC          rereads/    errors   algorithm      processed    uncorrected
+           fast | delayed   rewrites  corrected  invocations   [10^9 bytes]  errors
+read:   217066857        0         0  217066857          0     792620.973           0
+write:         0        0         0         0          0      10355.813           0
+verify: 11444070        0         0  11444070          0          0.000           0
+
+Non-medium error count:      287
+
+
+[GLTSD (Global Logging Target Save Disable) set. Enable Save with '-S on']
+SMART Self-test log
+Num  Test              Status                 segment  LifeTime  LBA_first_err [SK ASC ASQ]
+     Description                              number   (hours)
+# 1  Background long   Completed                   -      13                 - [-   -    -]
+Long (extended) Self Test duration: 42651 seconds [710.9 minutes]
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Command smartctl -a /dev/bus/0 -d megaraid,88 
+smartctl 6.2 2013-07-26 r3841 [x86_64-linux-4.14.34-1] (local build)
+Copyright (C) 2002-13, Bruce Allen, Christian Franke, www.smartmontools.org
+
+=== START OF INFORMATION SECTION ===
+Vendor:               SEAGATE
+Product:              ST8000NM0075
+Revision:             E003
+User Capacity:        8,001,563,222,016 bytes [8.00 TB]
+Logical block size:   512 bytes
+Physical block size:  4096 bytes
+Lowest aligned LBA:   0
+Logical block provisioning type unreported, LBPME=0, LBPRZ=0
+Rotation Rate:        7200 rpm
+Form Factor:          3.5 inches
+Logical Unit id:      0x5000c50094b4db93
+Serial number:        ZA197BFA0000R8112Q8M
+Device type:          disk
+Transport protocol:   SAS
+Local Time is:        Sat Aug  7 13:10:31 2021 IRDT
+SMART support is:     Available - device has SMART capability.
+SMART support is:     Enabled
+Temperature Warning:  Enabled
+
+=== START OF READ SMART DATA SECTION ===
+SMART Health Status: OK
+
+Current Drive Temperature:     33 C
+Drive Trip Temperature:        60 C
+
+Manufactured in week 43 of year 2017
+Specified cycle count over device lifetime:  10000
+Accumulated start-stop cycles:  144
+Specified load-unload count over device lifetime:  300000
+Accumulated load-unload cycles:  10246
+Elements in grown defect list: 0
+
+Vendor (Seagate) cache information
+  Blocks sent to initiator = 1686083336
+  Blocks received from initiator = 3031700592
+  Blocks read from cache and sent to initiator = 813608579
+  Number of read and write commands whose size <= segment size = 234358039
+  Number of read and write commands whose size > segment size = 154847
+
+Vendor (Seagate/Hitachi) factory information
+  number of hours powered up = 17747.07
+  number of minutes until next internal SMART test = 5
+
+Error counter log:
+           Errors Corrected by           Total   Correction     Gigabytes    Total
+               ECC          rereads/    errors   algorithm      processed    uncorrected
+           fast | delayed   rewrites  corrected  invocations   [10^9 bytes]  errors
+read:   3374568335        0         0  3374568335          0     799108.716           0
+write:         0        0         0         0          0      10365.742           0
+verify: 10316963        0         0  10316963          0          0.000           0
+
+Non-medium error count:      140
+
+
+[GLTSD (Global Logging Target Save Disable) set. Enable Save with '-S on']
+SMART Self-test log
+Num  Test              Status                 segment  LifeTime  LBA_first_err [SK ASC ASQ]
+     Description                              number   (hours)
+# 1  Background long   Completed                   -      12                 - [-   -    -]
+Long (extended) Self Test duration: 41810 seconds [696.8 minutes]
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Command smartctl -a /dev/bus/0 -d megaraid,76 
+smartctl 6.2 2013-07-26 r3841 [x86_64-linux-4.14.34-1] (local build)
+Copyright (C) 2002-13, Bruce Allen, Christian Franke, www.smartmontools.org
+
+=== START OF INFORMATION SECTION ===
+Vendor:               SEAGATE
+Product:              ST8000NM0075
+Revision:             E003
+User Capacity:        8,001,563,222,016 bytes [8.00 TB]
+Logical block size:   512 bytes
+Physical block size:  4096 bytes
+Lowest aligned LBA:   0
+Logical block provisioning type unreported, LBPME=0, LBPRZ=0
+Rotation Rate:        7200 rpm
+Form Factor:          3.5 inches
+Logical Unit id:      0x5000c50094e54373
+Serial number:        ZA19K2BE0000R816NWC0
+Device type:          disk
+Transport protocol:   SAS
+Local Time is:        Sat Aug  7 13:10:32 2021 IRDT
+SMART support is:     Available - device has SMART capability.
+SMART support is:     Enabled
+Temperature Warning:  Enabled
+
+=== START OF READ SMART DATA SECTION ===
+SMART Health Status: OK
+
+Current Drive Temperature:     31 C
+Drive Trip Temperature:        60 C
+
+Manufactured in week 46 of year 2017
+Specified cycle count over device lifetime:  10000
+Accumulated start-stop cycles:  67
+Specified load-unload count over device lifetime:  300000
+Accumulated load-unload cycles:  10510
+Elements in grown defect list: 0
+
+Vendor (Seagate) cache information
+  Blocks sent to initiator = 1033971504
+  Blocks received from initiator = 3030006832
+  Blocks read from cache and sent to initiator = 1157926087
+  Number of read and write commands whose size <= segment size = 231375938
+  Number of read and write commands whose size > segment size = 154395
+
+Vendor (Seagate/Hitachi) factory information
+  number of hours powered up = 17747.05
+  number of minutes until next internal SMART test = 26
+
+Error counter log:
+           Errors Corrected by           Total   Correction     Gigabytes    Total
+               ECC          rereads/    errors   algorithm      processed    uncorrected
+           fast | delayed   rewrites  corrected  invocations   [10^9 bytes]  errors
+read:   2230016077        0         0  2230016077          0     796575.812           0
+write:         0        0         0         0          0      10368.405           0
+verify: 10705636        0         0  10705636          0          0.000           0
+
+Non-medium error count:      159
+
+
+[GLTSD (Global Logging Target Save Disable) set. Enable Save with '-S on']
+SMART Self-test log
+Num  Test              Status                 segment  LifeTime  LBA_first_err [SK ASC ASQ]
+     Description                              number   (hours)
+# 1  Background long   Completed                   -      12                 - [-   -    -]
+Long (extended) Self Test duration: 41881 seconds [698.0 minutes]
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Command smartctl -a /dev/bus/0 -d megaraid,81 
+smartctl 6.2 2013-07-26 r3841 [x86_64-linux-4.14.34-1] (local build)
+Copyright (C) 2002-13, Bruce Allen, Christian Franke, www.smartmontools.org
+
+=== START OF INFORMATION SECTION ===
+Vendor:               SEAGATE
+Product:              ST8000NM0075
+Revision:             E003
+User Capacity:        8,001,563,222,016 bytes [8.00 TB]
+Logical block size:   512 bytes
+Physical block size:  4096 bytes
+Lowest aligned LBA:   0
+Logical block provisioning type unreported, LBPME=0, LBPRZ=0
+Rotation Rate:        7200 rpm
+Form Factor:          3.5 inches
+Logical Unit id:      0x5000c50094cb3b47
+Serial number:        ZA19DYGB0000R814FD6P
+Device type:          disk
+Transport protocol:   SAS
+Local Time is:        Sat Aug  7 13:10:32 2021 IRDT
+SMART support is:     Available - device has SMART capability.
+SMART support is:     Enabled
+Temperature Warning:  Enabled
+
+=== START OF READ SMART DATA SECTION ===
+SMART Health Status: OK
+
+Current Drive Temperature:     35 C
+Drive Trip Temperature:        60 C
+
+Manufactured in week 43 of year 2017
+Specified cycle count over device lifetime:  10000
+Accumulated start-stop cycles:  68
+Specified load-unload count over device lifetime:  300000
+Accumulated load-unload cycles:  1234
+Elements in grown defect list: 0
+
+Vendor (Seagate) cache information
+  Blocks sent to initiator = 1078183472
+  Blocks received from initiator = 1502474128
+  Blocks read from cache and sent to initiator = 1013306499
+  Number of read and write commands whose size <= segment size = 232976388
+  Number of read and write commands whose size > segment size = 153506
+
+Vendor (Seagate/Hitachi) factory information
+  number of hours powered up = 17784.92
+  number of minutes until next internal SMART test = 19
+
+Error counter log:
+           Errors Corrected by           Total   Correction     Gigabytes    Total
+               ECC          rereads/    errors   algorithm      processed    uncorrected
+           fast | delayed   rewrites  corrected  invocations   [10^9 bytes]  errors
+read:   2055220038        0         0  2055220038          0     805394.541           0
+write:         0        0         0         0          0      18381.404           0
+verify: 10159645        0         0  10159645          0          0.000           0
+
+Non-medium error count:      241
+
+
+[GLTSD (Global Logging Target Save Disable) set. Enable Save with '-S on']
+SMART Self-test log
+Num  Test              Status                 segment  LifeTime  LBA_first_err [SK ASC ASQ]
+     Description                              number   (hours)
+# 1  Background long   Completed                   -      13                 - [-   -    -]
+Long (extended) Self Test duration: 42358 seconds [706.0 minutes]
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Command smartctl -a /dev/bus/0 -d megaraid,87 
+smartctl 6.2 2013-07-26 r3841 [x86_64-linux-4.14.34-1] (local build)
+Copyright (C) 2002-13, Bruce Allen, Christian Franke, www.smartmontools.org
+
+=== START OF INFORMATION SECTION ===
+Vendor:               SEAGATE
+Product:              ST8000NM0075
+Revision:             E003
+User Capacity:        8,001,563,222,016 bytes [8.00 TB]
+Logical block size:   512 bytes
+Physical block size:  4096 bytes
+Lowest aligned LBA:   0
+Logical block provisioning type unreported, LBPME=0, LBPRZ=0
+Rotation Rate:        7200 rpm
+Form Factor:          3.5 inches
+Logical Unit id:      0x5000c50094b47ebb
+Serial number:        ZA197CR30000R747XYFY
+Device type:          disk
+Transport protocol:   SAS
+Local Time is:        Sat Aug  7 13:10:33 2021 IRDT
+SMART support is:     Available - device has SMART capability.
+SMART support is:     Enabled
+Temperature Warning:  Enabled
+
+=== START OF READ SMART DATA SECTION ===
+SMART Health Status: OK
+
+Current Drive Temperature:     37 C
+Drive Trip Temperature:        60 C
+
+Manufactured in week 43 of year 2017
+Specified cycle count over device lifetime:  10000
+Accumulated start-stop cycles:  144
+Specified load-unload count over device lifetime:  300000
+Accumulated load-unload cycles:  10537
+Elements in grown defect list: 0
+
+Vendor (Seagate) cache information
+  Blocks sent to initiator = 2944057280
+  Blocks received from initiator = 3012262360
+  Blocks read from cache and sent to initiator = 869615997
+  Number of read and write commands whose size <= segment size = 227614852
+  Number of read and write commands whose size > segment size = 153689
+
+Vendor (Seagate/Hitachi) factory information
+  number of hours powered up = 17747.42
+  number of minutes until next internal SMART test = 1
+
+Error counter log:
+           Errors Corrected by           Total   Correction     Gigabytes    Total
+               ECC          rereads/    errors   algorithm      processed    uncorrected
+           fast | delayed   rewrites  corrected  invocations   [10^9 bytes]  errors
+read:   467339303        0         0  467339303          0     793155.729           0
+write:         0        0         0         0          0      10357.892           0
+verify: 10667247        0         0  10667247          0          0.000           0
+
+Non-medium error count:      195
+
+
+[GLTSD (Global Logging Target Save Disable) set. Enable Save with '-S on']
+SMART Self-test log
+Num  Test              Status                 segment  LifeTime  LBA_first_err [SK ASC ASQ]
+     Description                              number   (hours)
+# 1  Background long   Completed                   -      12                 - [-   -    -]
+Long (extended) Self Test duration: 39991 seconds [666.5 minutes]
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Command smartctl -a /dev/bus/0 -d megaraid,95 
+smartctl 6.2 2013-07-26 r3841 [x86_64-linux-4.14.34-1] (local build)
+Copyright (C) 2002-13, Bruce Allen, Christian Franke, www.smartmontools.org
+
+=== START OF INFORMATION SECTION ===
+Vendor:               SEAGATE
+Product:              ST8000NM0075
+Revision:             E003
+User Capacity:        8,001,563,222,016 bytes [8.00 TB]
+Logical block size:   512 bytes
+Physical block size:  4096 bytes
+Lowest aligned LBA:   0
+Logical block provisioning type unreported, LBPME=0, LBPRZ=0
+Rotation Rate:        7200 rpm
+Form Factor:          3.5 inches
+Logical Unit id:      0x5000c50094b1ad67
+Serial number:        ZA196SGQ0000R806SDHX
+Device type:          disk
+Transport protocol:   SAS
+Local Time is:        Sat Aug  7 13:10:33 2021 IRDT
+SMART support is:     Available - device has SMART capability.
+SMART support is:     Enabled
+Temperature Warning:  Enabled
+
+=== START OF READ SMART DATA SECTION ===
+SMART Health Status: OK
+
+Current Drive Temperature:     37 C
+Drive Trip Temperature:        60 C
+
+Manufactured in week 43 of year 2017
+Specified cycle count over device lifetime:  10000
+Accumulated start-stop cycles:  142
+Specified load-unload count over device lifetime:  300000
+Accumulated load-unload cycles:  10479
+Elements in grown defect list: 0
+
+Vendor (Seagate) cache information
+  Blocks sent to initiator = 4291772792
+  Blocks received from initiator = 3037706064
+  Blocks read from cache and sent to initiator = 3395576423
+  Number of read and write commands whose size <= segment size = 230228967
+  Number of read and write commands whose size > segment size = 153662
+
+Vendor (Seagate/Hitachi) factory information
+  number of hours powered up = 17746.97
+  number of minutes until next internal SMART test = 31
+
+Error counter log:
+           Errors Corrected by           Total   Correction     Gigabytes    Total
+               ECC          rereads/    errors   algorithm      processed    uncorrected
+           fast | delayed   rewrites  corrected  invocations   [10^9 bytes]  errors
+read:   3321350357        0         0  3321350357          0     796044.783           0
+write:         0        0         0         0          0      10366.062           0
+verify: 12132578        0         0  12132578          0          0.000           0
+
+Non-medium error count:      443
+
+
+[GLTSD (Global Logging Target Save Disable) set. Enable Save with '-S on']
+SMART Self-test log
+Num  Test              Status                 segment  LifeTime  LBA_first_err [SK ASC ASQ]
+     Description                              number   (hours)
+# 1  Background long   Completed                   -      12                 - [-   -    -]
+Long (extended) Self Test duration: 40874 seconds [681.2 minutes]
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Command smartctl -a /dev/bus/0 -d megaraid,104 
+smartctl 6.2 2013-07-26 r3841 [x86_64-linux-4.14.34-1] (local build)
+Copyright (C) 2002-13, Bruce Allen, Christian Franke, www.smartmontools.org
+
+=== START OF INFORMATION SECTION ===
+Vendor:               SEAGATE
+Product:              ST8000NM0075
+Revision:             E003
+User Capacity:        8,001,563,222,016 bytes [8.00 TB]
+Logical block size:   512 bytes
+Physical block size:  4096 bytes
+Lowest aligned LBA:   0
+Logical block provisioning type unreported, LBPME=0, LBPRZ=0
+Rotation Rate:        7200 rpm
+Form Factor:          3.5 inches
+Logical Unit id:      0x5000c50094e99c73
+Serial number:        ZA19KP9G0000R817R6VM
+Device type:          disk
+Transport protocol:   SAS
+Local Time is:        Sat Aug  7 13:10:34 2021 IRDT
+SMART support is:     Available - device has SMART capability.
+SMART support is:     Enabled
+Temperature Warning:  Enabled
+
+=== START OF READ SMART DATA SECTION ===
+SMART Health Status: OK
+
+Current Drive Temperature:     35 C
+Drive Trip Temperature:        60 C
+
+Manufactured in week 46 of year 2017
+Specified cycle count over device lifetime:  10000
+Accumulated start-stop cycles:  68
+Specified load-unload count over device lifetime:  300000
+Accumulated load-unload cycles:  2650
+Elements in grown defect list: 0
+
+Vendor (Seagate) cache information
+  Blocks sent to initiator = 2159062760
+  Blocks received from initiator = 3008539800
+  Blocks read from cache and sent to initiator = 1935322075
+  Number of read and write commands whose size <= segment size = 230441302
+  Number of read and write commands whose size > segment size = 159206
+
+Vendor (Seagate/Hitachi) factory information
+  number of hours powered up = 17877.75
+  number of minutes until next internal SMART test = 54
+
+Error counter log:
+           Errors Corrected by           Total   Correction     Gigabytes    Total
+               ECC          rereads/    errors   algorithm      processed    uncorrected
+           fast | delayed   rewrites  corrected  invocations   [10^9 bytes]  errors
+read:   1338205779        0         0  1338205779          0     794952.835           0
+write:         0        0         0         0          0      10352.453           0
+verify: 10291064        0         0  10291064          0          0.000           0
+
+Non-medium error count:      435
+
+
+[GLTSD (Global Logging Target Save Disable) set. Enable Save with '-S on']
+SMART Self-test log
+Num  Test              Status                 segment  LifeTime  LBA_first_err [SK ASC ASQ]
+     Description                              number   (hours)
+# 1  Background long   Completed                   -      13                 - [-   -    -]
+Long (extended) Self Test duration: 42151 seconds [702.5 minutes]
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Command smartctl -a /dev/bus/0 -d megaraid,90 
+smartctl 6.2 2013-07-26 r3841 [x86_64-linux-4.14.34-1] (local build)
+Copyright (C) 2002-13, Bruce Allen, Christian Franke, www.smartmontools.org
+
+=== START OF INFORMATION SECTION ===
+Vendor:               SEAGATE
+Product:              ST8000NM0075
+Revision:             E003
+User Capacity:        8,001,563,222,016 bytes [8.00 TB]
+Logical block size:   512 bytes
+Physical block size:  4096 bytes
+Lowest aligned LBA:   0
+Logical block provisioning type unreported, LBPME=0, LBPRZ=0
+Rotation Rate:        7200 rpm
+Form Factor:          3.5 inches
+Logical Unit id:      0x5000c50094e99c3f
+Serial number:        ZA19KPA20000R817R6NZ
+Device type:          disk
+Transport protocol:   SAS
+Local Time is:        Sat Aug  7 13:10:35 2021 IRDT
+SMART support is:     Available - device has SMART capability.
+SMART support is:     Enabled
+Temperature Warning:  Enabled
+
+=== START OF READ SMART DATA SECTION ===
+SMART Health Status: OK
+
+Current Drive Temperature:     34 C
+Drive Trip Temperature:        60 C
+
+Manufactured in week 46 of year 2017
+Specified cycle count over device lifetime:  10000
+Accumulated start-stop cycles:  69
+Specified load-unload count over device lifetime:  300000
+Accumulated load-unload cycles:  2645
+Elements in grown defect list: 0
+
+Vendor (Seagate) cache information
+  Blocks sent to initiator = 4127035224
+  Blocks received from initiator = 3028198656
+  Blocks read from cache and sent to initiator = 901348613
+  Number of read and write commands whose size <= segment size = 228473040
+  Number of read and write commands whose size > segment size = 150251
+
+Vendor (Seagate/Hitachi) factory information
+  number of hours powered up = 17968.72
+  number of minutes until next internal SMART test = 25
+
+Error counter log:
+           Errors Corrected by           Total   Correction     Gigabytes    Total
+               ECC          rereads/    errors   algorithm      processed    uncorrected
+           fast | delayed   rewrites  corrected  invocations   [10^9 bytes]  errors
+read:   779150848        0         0  779150848          0     793761.414           0
+write:         0        0         0         0          0      10361.717           0
+verify: 10421044        0         0  10421044          0          0.000           0
+
+Non-medium error count:      371
+
+
+[GLTSD (Global Logging Target Save Disable) set. Enable Save with '-S on']
+SMART Self-test log
+Num  Test              Status                 segment  LifeTime  LBA_first_err [SK ASC ASQ]
+     Description                              number   (hours)
+# 1  Background long   Completed                   -      13                 - [-   -    -]
+Long (extended) Self Test duration: 42386 seconds [706.4 minutes]
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Command smartctl -a /dev/bus/0 -d megaraid,77 
+smartctl 6.2 2013-07-26 r3841 [x86_64-linux-4.14.34-1] (local build)
+Copyright (C) 2002-13, Bruce Allen, Christian Franke, www.smartmontools.org
+
+=== START OF INFORMATION SECTION ===
+Vendor:               SEAGATE
+Product:              ST8000NM0075
+Revision:             E003
+User Capacity:        8,001,563,222,016 bytes [8.00 TB]
+Logical block size:   512 bytes
+Physical block size:  4096 bytes
+Lowest aligned LBA:   0
+Logical block provisioning type unreported, LBPME=0, LBPRZ=0
+Rotation Rate:        7200 rpm
+Form Factor:          3.5 inches
+Logical Unit id:      0x5000c50094e4ebbf
+Serial number:        ZA19K3SH0000R816N890
+Device type:          disk
+Transport protocol:   SAS
+Local Time is:        Sat Aug  7 13:10:35 2021 IRDT
+SMART support is:     Available - device has SMART capability.
+SMART support is:     Enabled
+Temperature Warning:  Enabled
+
+=== START OF READ SMART DATA SECTION ===
+SMART Health Status: OK
+
+Current Drive Temperature:     31 C
+Drive Trip Temperature:        60 C
+
+Manufactured in week 46 of year 2017
+Specified cycle count over device lifetime:  10000
+Accumulated start-stop cycles:  69
+Specified load-unload count over device lifetime:  300000
+Accumulated load-unload cycles:  10384
+Elements in grown defect list: 0
+
+Vendor (Seagate) cache information
+  Blocks sent to initiator = 1162643192
+  Blocks received from initiator = 3074161816
+  Blocks read from cache and sent to initiator = 2065732526
+  Number of read and write commands whose size <= segment size = 224560306
+  Number of read and write commands whose size > segment size = 152774
+
+Vendor (Seagate/Hitachi) factory information
+  number of hours powered up = 17747.28
+  number of minutes until next internal SMART test = 29
+
+Error counter log:
+           Errors Corrected by           Total   Correction     Gigabytes    Total
+               ECC          rereads/    errors   algorithm      processed    uncorrected
+           fast | delayed   rewrites  corrected  invocations   [10^9 bytes]  errors
+read:   3203738488        0         0  3203738488          0     790044.622           0
+write:         0        0         0         0          0      10391.074           0
+verify: 10143612        0         0  10143612          0          0.000           0
+
+Non-medium error count:      189
+
+
+[GLTSD (Global Logging Target Save Disable) set. Enable Save with '-S on']
+SMART Self-test log
+Num  Test              Status                 segment  LifeTime  LBA_first_err [SK ASC ASQ]
+     Description                              number   (hours)
+# 1  Background long   Completed                   -      12                 - [-   -    -]
+Long (extended) Self Test duration: 42395 seconds [706.6 minutes]
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Command smartctl -a /dev/bus/0 -d megaraid,99 
+smartctl 6.2 2013-07-26 r3841 [x86_64-linux-4.14.34-1] (local build)
+Copyright (C) 2002-13, Bruce Allen, Christian Franke, www.smartmontools.org
+
+=== START OF INFORMATION SECTION ===
+Vendor:               SEAGATE
+Product:              ST8000NM0075
+Revision:             E003
+User Capacity:        8,001,563,222,016 bytes [8.00 TB]
+Logical block size:   512 bytes
+Physical block size:  4096 bytes
+Lowest aligned LBA:   0
+Logical block provisioning type unreported, LBPME=0, LBPRZ=0
+Rotation Rate:        7200 rpm
+Form Factor:          3.5 inches
+Logical Unit id:      0x5000c50094cad21f
+Serial number:        ZA19DZ270000R814FCQY
+Device type:          disk
+Transport protocol:   SAS
+Local Time is:        Sat Aug  7 13:10:36 2021 IRDT
+SMART support is:     Available - device has SMART capability.
+SMART support is:     Enabled
+Temperature Warning:  Enabled
+
+=== START OF READ SMART DATA SECTION ===
+SMART Health Status: OK
+
+Current Drive Temperature:     36 C
+Drive Trip Temperature:        60 C
+
+Manufactured in week 43 of year 2017
+Specified cycle count over device lifetime:  10000
+Accumulated start-stop cycles:  68
+Specified load-unload count over device lifetime:  300000
+Accumulated load-unload cycles:  1229
+Elements in grown defect list: 0
+
+Vendor (Seagate) cache information
+  Blocks sent to initiator = 2587643376
+  Blocks received from initiator = 1494834744
+  Blocks read from cache and sent to initiator = 3173928466
+  Number of read and write commands whose size <= segment size = 226184774
+  Number of read and write commands whose size > segment size = 151154
+
+Vendor (Seagate/Hitachi) factory information
+  number of hours powered up = 17784.90
+  number of minutes until next internal SMART test = 7
+
+Error counter log:
+           Errors Corrected by           Total   Correction     Gigabytes    Total
+               ECC          rereads/    errors   algorithm      processed    uncorrected
+           fast | delayed   rewrites  corrected  invocations   [10^9 bytes]  errors
+read:   342825348        0         0  342825348          0     801769.338           0
+write:         0        0         0         0          0      18381.168           0
+verify: 10147011        0         0  10147011          0          0.000           0
+
+Non-medium error count:      214
+
+
+[GLTSD (Global Logging Target Save Disable) set. Enable Save with '-S on']
+SMART Self-test log
+Num  Test              Status                 segment  LifeTime  LBA_first_err [SK ASC ASQ]
+     Description                              number   (hours)
+# 1  Background long   Completed                   -      13                 - [-   -    -]
+Long (extended) Self Test duration: 42159 seconds [702.6 minutes]
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Command smartctl -a /dev/bus/0 -d megaraid,85 
+smartctl 6.2 2013-07-26 r3841 [x86_64-linux-4.14.34-1] (local build)
+Copyright (C) 2002-13, Bruce Allen, Christian Franke, www.smartmontools.org
+
+=== START OF INFORMATION SECTION ===
+Vendor:               SEAGATE
+Product:              ST8000NM0075
+Revision:             E003
+User Capacity:        8,001,563,222,016 bytes [8.00 TB]
+Logical block size:   512 bytes
+Physical block size:  4096 bytes
+Lowest aligned LBA:   0
+Logical block provisioning type unreported, LBPME=0, LBPRZ=0
+Rotation Rate:        7200 rpm
+Form Factor:          3.5 inches
+Logical Unit id:      0x5000c50094b47b6b
+Serial number:        ZA1960A40000R811XBAR
+Device type:          disk
+Transport protocol:   SAS
+Local Time is:        Sat Aug  7 13:10:36 2021 IRDT
+SMART support is:     Available - device has SMART capability.
+SMART support is:     Enabled
+Temperature Warning:  Enabled
+
+=== START OF READ SMART DATA SECTION ===
+SMART Health Status: OK
+
+Current Drive Temperature:     36 C
+Drive Trip Temperature:        60 C
+
+Manufactured in week 43 of year 2017
+Specified cycle count over device lifetime:  10000
+Accumulated start-stop cycles:  146
+Specified load-unload count over device lifetime:  300000
+Accumulated load-unload cycles:  2559
+Elements in grown defect list: 0
+
+Vendor (Seagate) cache information
+  Blocks sent to initiator = 1480958544
+  Blocks received from initiator = 3040108904
+  Blocks read from cache and sent to initiator = 2034346997
+  Number of read and write commands whose size <= segment size = 228264092
+  Number of read and write commands whose size > segment size = 153480
+
+Vendor (Seagate/Hitachi) factory information
+  number of hours powered up = 17968.23
+  number of minutes until next internal SMART test = 43
+
+Error counter log:
+           Errors Corrected by           Total   Correction     Gigabytes    Total
+               ECC          rereads/    errors   algorithm      processed    uncorrected
+           fast | delayed   rewrites  corrected  invocations   [10^9 bytes]  errors
+read:   120605857        0         0  120605857          0     792406.623           0
+write:         0        0         0         0          0      10368.208           0
+verify: 10619935        0         0  10619935          0          0.000           0
+
+Non-medium error count:      213
+
+
+[GLTSD (Global Logging Target Save Disable) set. Enable Save with '-S on']
+SMART Self-test log
+Num  Test              Status                 segment  LifeTime  LBA_first_err [SK ASC ASQ]
+     Description                              number   (hours)
+# 1  Background long   Completed                   -      13                 - [-   -    -]
+Long (extended) Self Test duration: 42536 seconds [708.9 minutes]
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Command smartctl -a /dev/bus/0 -d megaraid,82 
+smartctl 6.2 2013-07-26 r3841 [x86_64-linux-4.14.34-1] (local build)
+Copyright (C) 2002-13, Bruce Allen, Christian Franke, www.smartmontools.org
+
+=== START OF INFORMATION SECTION ===
+Vendor:               SEAGATE
+Product:              ST8000NM0075
+Revision:             E003
+User Capacity:        8,001,563,222,016 bytes [8.00 TB]
+Logical block size:   512 bytes
+Physical block size:  4096 bytes
+Lowest aligned LBA:   0
+Logical block provisioning type unreported, LBPME=0, LBPRZ=0
+Rotation Rate:        7200 rpm
+Form Factor:          3.5 inches
+Logical Unit id:      0x5000c50094e4a923
+Serial number:        ZA19JW8E0000R816P097
+Device type:          disk
+Transport protocol:   SAS
+Local Time is:        Sat Aug  7 13:10:37 2021 IRDT
+SMART support is:     Available - device has SMART capability.
+SMART support is:     Enabled
+Temperature Warning:  Enabled
+
+=== START OF READ SMART DATA SECTION ===
+SMART Health Status: OK
+
+Current Drive Temperature:     34 C
+Drive Trip Temperature:        60 C
+
+Manufactured in week 46 of year 2017
+Specified cycle count over device lifetime:  10000
+Accumulated start-stop cycles:  65
+Specified load-unload count over device lifetime:  300000
+Accumulated load-unload cycles:  1141
+Elements in grown defect list: 0
+
+Vendor (Seagate) cache information
+  Blocks sent to initiator = 3655252232
+  Blocks received from initiator = 1963714504
+  Blocks read from cache and sent to initiator = 3863170389
+  Number of read and write commands whose size <= segment size = 238697855
+  Number of read and write commands whose size > segment size = 151272
+
+Vendor (Seagate/Hitachi) factory information
+  number of hours powered up = 17783.70
+  number of minutes until next internal SMART test = 55
+
+Error counter log:
+           Errors Corrected by           Total   Correction     Gigabytes    Total
+               ECC          rereads/    errors   algorithm      processed    uncorrected
+           fast | delayed   rewrites  corrected  invocations   [10^9 bytes]  errors
+read:   3835639984        0         0  3835639984          0     791320.838           0
+write:         0        0         0         0          0      18620.254           0
+verify: 10146852        0         0  10146852          0          0.000           0
+
+Non-medium error count:     1095
+
+
+[GLTSD (Global Logging Target Save Disable) set. Enable Save with '-S on']
+SMART Self-test log
+Num  Test              Status                 segment  LifeTime  LBA_first_err [SK ASC ASQ]
+     Description                              number   (hours)
+# 1  Background long   Completed                   -      12                 - [-   -    -]
+Long (extended) Self Test duration: 43421 seconds [723.7 minutes]
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Command smartctl -a /dev/bus/0 -d megaraid,98 
+smartctl 6.2 2013-07-26 r3841 [x86_64-linux-4.14.34-1] (local build)
+Copyright (C) 2002-13, Bruce Allen, Christian Franke, www.smartmontools.org
+
+=== START OF INFORMATION SECTION ===
+Vendor:               SEAGATE
+Product:              ST8000NM0075
+Revision:             E003
+User Capacity:        8,001,563,222,016 bytes [8.00 TB]
+Logical block size:   512 bytes
+Physical block size:  4096 bytes
+Lowest aligned LBA:   0
+Logical block provisioning type unreported, LBPME=0, LBPRZ=0
+Rotation Rate:        7200 rpm
+Form Factor:          3.5 inches
+Logical Unit id:      0x5000c50094e9f963
+Serial number:        ZA19KTZZ0000R817QJ1D
+Device type:          disk
+Transport protocol:   SAS
+Local Time is:        Sat Aug  7 13:10:37 2021 IRDT
+SMART support is:     Available - device has SMART capability.
+SMART support is:     Enabled
+Temperature Warning:  Enabled
+
+=== START OF READ SMART DATA SECTION ===
+SMART Health Status: OK
+
+Current Drive Temperature:     34 C
+Drive Trip Temperature:        60 C
+
+Manufactured in week 46 of year 2017
+Specified cycle count over device lifetime:  10000
+Accumulated start-stop cycles:  70
+Specified load-unload count over device lifetime:  300000
+Accumulated load-unload cycles:  1222
+Elements in grown defect list: 0
+
+Vendor (Seagate) cache information
+  Blocks sent to initiator = 3542181568
+  Blocks received from initiator = 1575108480
+  Blocks read from cache and sent to initiator = 1974115382
+  Number of read and write commands whose size <= segment size = 227361296
+  Number of read and write commands whose size > segment size = 155196
+
+Vendor (Seagate/Hitachi) factory information
+  number of hours powered up = 17785.33
+  number of minutes until next internal SMART test = 37
+
+Error counter log:
+           Errors Corrected by           Total   Correction     Gigabytes    Total
+               ECC          rereads/    errors   algorithm      processed    uncorrected
+           fast | delayed   rewrites  corrected  invocations   [10^9 bytes]  errors
+read:   3331451017        0         0  3331451017          0     800059.039           0
+write:         0        0         0         0          0      18417.884           0
+verify: 10580330        0         0  10580330          0          0.000           0
+
+Non-medium error count:      383
+
+
+[GLTSD (Global Logging Target Save Disable) set. Enable Save with '-S on']
+SMART Self-test log
+Num  Test              Status                 segment  LifeTime  LBA_first_err [SK ASC ASQ]
+     Description                              number   (hours)
+# 1  Background long   Completed                   -      13                 - [-   -    -]
+Long (extended) Self Test duration: 43510 seconds [725.2 minutes]
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Command smartctl -a /dev/bus/0 -d megaraid,97 
+smartctl 6.2 2013-07-26 r3841 [x86_64-linux-4.14.34-1] (local build)
+Copyright (C) 2002-13, Bruce Allen, Christian Franke, www.smartmontools.org
+
+=== START OF INFORMATION SECTION ===
+Vendor:               SEAGATE
+Product:              ST8000NM0075
+Revision:             E003
+User Capacity:        8,001,563,222,016 bytes [8.00 TB]
+Logical block size:   512 bytes
+Physical block size:  4096 bytes
+Lowest aligned LBA:   0
+Logical block provisioning type unreported, LBPME=0, LBPRZ=0
+Rotation Rate:        7200 rpm
+Form Factor:          3.5 inches
+Logical Unit id:      0x5000c50094e9a23b
+Serial number:        ZA19KZ2F0000R817Q4TX
+Device type:          disk
+Transport protocol:   SAS
+Local Time is:        Sat Aug  7 13:10:38 2021 IRDT
+SMART support is:     Available - device has SMART capability.
+SMART support is:     Enabled
+Temperature Warning:  Enabled
+
+=== START OF READ SMART DATA SECTION ===
+SMART Health Status: OK
+
+Current Drive Temperature:     33 C
+Drive Trip Temperature:        60 C
+
+Manufactured in week 46 of year 2017
+Specified cycle count over device lifetime:  10000
+Accumulated start-stop cycles:  70
+Specified load-unload count over device lifetime:  300000
+Accumulated load-unload cycles:  10651
+Elements in grown defect list: 0
+
+Vendor (Seagate) cache information
+  Blocks sent to initiator = 3008325080
+  Blocks received from initiator = 1449693624
+  Blocks read from cache and sent to initiator = 3128912813
+  Number of read and write commands whose size <= segment size = 232508502
+  Number of read and write commands whose size > segment size = 159463
+
+Vendor (Seagate/Hitachi) factory information
+  number of hours powered up = 17785.03
+  number of minutes until next internal SMART test = 32
+
+Error counter log:
+           Errors Corrected by           Total   Correction     Gigabytes    Total
+               ECC          rereads/    errors   algorithm      processed    uncorrected
+           fast | delayed   rewrites  corrected  invocations   [10^9 bytes]  errors
+read:   2582260606        0         0  2582260606          0     806382.774           0
+write:         0        0         0         0          0      18353.654           0
+verify: 10145801        0         0  10145801          0          0.000           0
+
+Non-medium error count:      353
+
+
+[GLTSD (Global Logging Target Save Disable) set. Enable Save with '-S on']
+SMART Self-test log
+Num  Test              Status                 segment  LifeTime  LBA_first_err [SK ASC ASQ]
+     Description                              number   (hours)
+# 1  Background long   Completed                   -      13                 - [-   -    -]
+Long (extended) Self Test duration: 43382 seconds [723.0 minutes]
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Command smartctl -a /dev/bus/0 -d megaraid,92 
+smartctl 6.2 2013-07-26 r3841 [x86_64-linux-4.14.34-1] (local build)
+Copyright (C) 2002-13, Bruce Allen, Christian Franke, www.smartmontools.org
+
+=== START OF INFORMATION SECTION ===
+Vendor:               SEAGATE
+Product:              ST8000NM0075
+Revision:             E003
+User Capacity:        8,001,563,222,016 bytes [8.00 TB]
+Logical block size:   512 bytes
+Physical block size:  4096 bytes
+Lowest aligned LBA:   0
+Logical block provisioning type unreported, LBPME=0, LBPRZ=0
+Rotation Rate:        7200 rpm
+Form Factor:          3.5 inches
+Logical Unit id:      0x5000c50094cb29d7
+Serial number:        ZA19DY2D0000R814TPX1
+Device type:          disk
+Transport protocol:   SAS
+Local Time is:        Sat Aug  7 13:10:38 2021 IRDT
+SMART support is:     Available - device has SMART capability.
+SMART support is:     Enabled
+Temperature Warning:  Enabled
+
+=== START OF READ SMART DATA SECTION ===
+SMART Health Status: OK
+
+Current Drive Temperature:     31 C
+Drive Trip Temperature:        60 C
+
+Manufactured in week 43 of year 2017
+Specified cycle count over device lifetime:  10000
+Accumulated start-stop cycles:  70
+Specified load-unload count over device lifetime:  300000
+Accumulated load-unload cycles:  1204
+Elements in grown defect list: 0
+
+Vendor (Seagate) cache information
+  Blocks sent to initiator = 2253584576
+  Blocks received from initiator = 1504434872
+  Blocks read from cache and sent to initiator = 2736457598
+  Number of read and write commands whose size <= segment size = 228418861
+  Number of read and write commands whose size > segment size = 159838
+
+Vendor (Seagate/Hitachi) factory information
+  number of hours powered up = 17785.05
+  number of minutes until next internal SMART test = 8
+
+Error counter log:
+           Errors Corrected by           Total   Correction     Gigabytes    Total
+               ECC          rereads/    errors   algorithm      processed    uncorrected
+           fast | delayed   rewrites  corrected  invocations   [10^9 bytes]  errors
+read:   240755197        0         0  240755197          0     801598.300           0
+write:         0        0         0         0          0      18381.281           0
+verify: 10147089        0         0  10147089          0          0.000           0
+
+Non-medium error count:      135
+
+
+[GLTSD (Global Logging Target Save Disable) set. Enable Save with '-S on']
+SMART Self-test log
+Num  Test              Status                 segment  LifeTime  LBA_first_err [SK ASC ASQ]
+     Description                              number   (hours)
+# 1  Background long   Completed                   -      13                 - [-   -    -]
+Long (extended) Self Test duration: 44310 seconds [738.5 minutes]
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Command smartctl -a /dev/bus/0 -d megaraid,91 
+smartctl 6.2 2013-07-26 r3841 [x86_64-linux-4.14.34-1] (local build)
+Copyright (C) 2002-13, Bruce Allen, Christian Franke, www.smartmontools.org
+
+=== START OF INFORMATION SECTION ===
+Vendor:               SEAGATE
+Product:              ST8000NM0075
+Revision:             E003
+User Capacity:        8,001,563,222,016 bytes [8.00 TB]
+Logical block size:   512 bytes
+Physical block size:  4096 bytes
+Lowest aligned LBA:   0
+Logical block provisioning type unreported, LBPME=0, LBPRZ=0
+Rotation Rate:        7200 rpm
+Form Factor:          3.5 inches
+Logical Unit id:      0x5000c50094e4e283
+Serial number:        ZA19JTYD0000R816NVKL
+Device type:          disk
+Transport protocol:   SAS
+Local Time is:        Sat Aug  7 13:10:39 2021 IRDT
+SMART support is:     Available - device has SMART capability.
+SMART support is:     Enabled
+Temperature Warning:  Enabled
+
+=== START OF READ SMART DATA SECTION ===
+SMART Health Status: OK
+
+Current Drive Temperature:     35 C
+Drive Trip Temperature:        60 C
+
+Manufactured in week 46 of year 2017
+Specified cycle count over device lifetime:  10000
+Accumulated start-stop cycles:  65
+Specified load-unload count over device lifetime:  300000
+Accumulated load-unload cycles:  1260
+Elements in grown defect list: 0
+
+Vendor (Seagate) cache information
+  Blocks sent to initiator = 319971240
+  Blocks received from initiator = 1212359704
+  Blocks read from cache and sent to initiator = 3229414730
+  Number of read and write commands whose size <= segment size = 154079371
+  Number of read and write commands whose size > segment size = 505432
+
+Vendor (Seagate/Hitachi) factory information
+  number of hours powered up = 17783.42
+  number of minutes until next internal SMART test = 15
+
+Error counter log:
+           Errors Corrected by           Total   Correction     Gigabytes    Total
+               ECC          rereads/    errors   algorithm      processed    uncorrected
+           fast | delayed   rewrites  corrected  invocations   [10^9 bytes]  errors
+read:   4251531139        0         0  4251531139          0     791812.197           0
+write:         0        0         0         0          0      22627.438           0
+verify: 10150061        0         0  10150061          0          0.000           0
+
+Non-medium error count:      218
+
+
+[GLTSD (Global Logging Target Save Disable) set. Enable Save with '-S on']
+SMART Self-test log
+Num  Test              Status                 segment  LifeTime  LBA_first_err [SK ASC ASQ]
+     Description                              number   (hours)
+# 1  Background long   Completed                   -      12                 - [-   -    -]
+Long (extended) Self Test duration: 42720 seconds [712.0 minutes]
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Command smartctl -a /dev/bus/0 -d megaraid,89 
+smartctl 6.2 2013-07-26 r3841 [x86_64-linux-4.14.34-1] (local build)
+Copyright (C) 2002-13, Bruce Allen, Christian Franke, www.smartmontools.org
+
+=== START OF INFORMATION SECTION ===
+Vendor:               SEAGATE
+Product:              ST8000NM0075
+Revision:             E003
+User Capacity:        8,001,563,222,016 bytes [8.00 TB]
+Logical block size:   512 bytes
+Physical block size:  4096 bytes
+Lowest aligned LBA:   0
+Logical block provisioning type unreported, LBPME=0, LBPRZ=0
+Rotation Rate:        7200 rpm
+Form Factor:          3.5 inches
+Logical Unit id:      0x5000c50094e52b93
+Serial number:        ZA19K2HN0000R816NX66
+Device type:          disk
+Transport protocol:   SAS
+Local Time is:        Sat Aug  7 13:10:39 2021 IRDT
+SMART support is:     Available - device has SMART capability.
+SMART support is:     Enabled
+Temperature Warning:  Enabled
+
+=== START OF READ SMART DATA SECTION ===
+SMART Health Status: OK
+
+Current Drive Temperature:     36 C
+Drive Trip Temperature:        60 C
+
+Manufactured in week 46 of year 2017
+Specified cycle count over device lifetime:  10000
+Accumulated start-stop cycles:  65
+Specified load-unload count over device lifetime:  300000
+Accumulated load-unload cycles:  1238
+Elements in grown defect list: 0
+
+Vendor (Seagate) cache information
+  Blocks sent to initiator = 379854424
+  Blocks received from initiator = 2658807952
+  Blocks read from cache and sent to initiator = 3213328248
+  Number of read and write commands whose size <= segment size = 151806486
+  Number of read and write commands whose size > segment size = 482937
+
+Vendor (Seagate/Hitachi) factory information
+  number of hours powered up = 17783.32
+  number of minutes until next internal SMART test = 58
+
+Error counter log:
+           Errors Corrected by           Total   Correction     Gigabytes    Total
+               ECC          rereads/    errors   algorithm      processed    uncorrected
+           fast | delayed   rewrites  corrected  invocations   [10^9 bytes]  errors
+read:   2144467272        0         0  2144467272          0     796240.904           0
+write:         0        0         0         0          0      14570.932           0
+verify: 10150317        0         0  10150317          0          0.000           0
+
+Non-medium error count:      296
+
+
+[GLTSD (Global Logging Target Save Disable) set. Enable Save with '-S on']
+SMART Self-test log
+Num  Test              Status                 segment  LifeTime  LBA_first_err [SK ASC ASQ]
+     Description                              number   (hours)
+# 1  Background long   Completed                   -      12                 - [-   -    -]
+Long (extended) Self Test duration: 43419 seconds [723.6 minutes]
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Command smartctl -a /dev/bus/0 -d megaraid,105 
+smartctl 6.2 2013-07-26 r3841 [x86_64-linux-4.14.34-1] (local build)
+Copyright (C) 2002-13, Bruce Allen, Christian Franke, www.smartmontools.org
+
+=== START OF INFORMATION SECTION ===
+Vendor:               SEAGATE
+Product:              ST8000NM0075
+Revision:             E003
+User Capacity:        8,001,563,222,016 bytes [8.00 TB]
+Logical block size:   512 bytes
+Physical block size:  4096 bytes
+Lowest aligned LBA:   0
+Logical block provisioning type unreported, LBPME=0, LBPRZ=0
+Rotation Rate:        7200 rpm
+Form Factor:          3.5 inches
+Logical Unit id:      0x5000c50094e517ab
+Serial number:        ZA19K2XF0000R816NY34
+Device type:          disk
+Transport protocol:   SAS
+Local Time is:        Sat Aug  7 13:10:40 2021 IRDT
+SMART support is:     Available - device has SMART capability.
+SMART support is:     Enabled
+Temperature Warning:  Enabled
+
+=== START OF READ SMART DATA SECTION ===
+SMART Health Status: OK
+
+Current Drive Temperature:     34 C
+Drive Trip Temperature:        60 C
+
+Manufactured in week 46 of year 2017
+Specified cycle count over device lifetime:  10000
+Accumulated start-stop cycles:  65
+Specified load-unload count over device lifetime:  300000
+Accumulated load-unload cycles:  1281
+Elements in grown defect list: 0
+
+Vendor (Seagate) cache information
+  Blocks sent to initiator = 1544722616
+  Blocks received from initiator = 2839660848
+  Blocks read from cache and sent to initiator = 1829740847
+  Number of read and write commands whose size <= segment size = 153215966
+  Number of read and write commands whose size > segment size = 483919
+
+Vendor (Seagate/Hitachi) factory information
+  number of hours powered up = 17783.60
+  number of minutes until next internal SMART test = 27
+
+Error counter log:
+           Errors Corrected by           Total   Correction     Gigabytes    Total
+               ECC          rereads/    errors   algorithm      processed    uncorrected
+           fast | delayed   rewrites  corrected  invocations   [10^9 bytes]  errors
+read:   2802978716        1         0  2802978717          1     799036.340           0
+write:         0        0         0         0          0      14664.495           0
+verify:  6908438        0         0   6908438          0          0.000           0
+
+Non-medium error count:      289
+
+
+[GLTSD (Global Logging Target Save Disable) set. Enable Save with '-S on']
+SMART Self-test log
+Num  Test              Status                 segment  LifeTime  LBA_first_err [SK ASC ASQ]
+     Description                              number   (hours)
+# 1  Background long   Completed                   -      12                 - [-   -    -]
+Long (extended) Self Test duration: 41888 seconds [698.1 minutes]
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Command smartctl -a /dev/bus/0 -d megaraid,103 
+smartctl 6.2 2013-07-26 r3841 [x86_64-linux-4.14.34-1] (local build)
+Copyright (C) 2002-13, Bruce Allen, Christian Franke, www.smartmontools.org
+
+=== START OF INFORMATION SECTION ===
+Vendor:               SEAGATE
+Product:              ST8000NM0075
+Revision:             E003
+User Capacity:        8,001,563,222,016 bytes [8.00 TB]
+Logical block size:   512 bytes
+Physical block size:  4096 bytes
+Lowest aligned LBA:   0
+Logical block provisioning type unreported, LBPME=0, LBPRZ=0
+Rotation Rate:        7200 rpm
+Form Factor:          3.5 inches
+Logical Unit id:      0x5000c50094e4a983
+Serial number:        ZA19JW860000R816NZWP
+Device type:          disk
+Transport protocol:   SAS
+Local Time is:        Sat Aug  7 13:10:40 2021 IRDT
+SMART support is:     Available - device has SMART capability.
+SMART support is:     Enabled
+Temperature Warning:  Enabled
+
+=== START OF READ SMART DATA SECTION ===
+SMART Health Status: OK
+
+Current Drive Temperature:     37 C
+Drive Trip Temperature:        60 C
+
+Manufactured in week 46 of year 2017
+Specified cycle count over device lifetime:  10000
+Accumulated start-stop cycles:  65
+Specified load-unload count over device lifetime:  300000
+Accumulated load-unload cycles:  1140
+Elements in grown defect list: 0
+
+Vendor (Seagate) cache information
+  Blocks sent to initiator = 3955132752
+  Blocks received from initiator = 3276713424
+  Blocks read from cache and sent to initiator = 2647514855
+  Number of read and write commands whose size <= segment size = 163456175
+  Number of read and write commands whose size > segment size = 484962
+
+Vendor (Seagate/Hitachi) factory information
+  number of hours powered up = 17783.65
+  number of minutes until next internal SMART test = 27
+
+Error counter log:
+           Errors Corrected by           Total   Correction     Gigabytes    Total
+               ECC          rereads/    errors   algorithm      processed    uncorrected
+           fast | delayed   rewrites  corrected  invocations   [10^9 bytes]  errors
+read:   4094177683        0         0  4094177683          0     791474.377           0
+write:         0        0         0         0          0      14888.427           0
+verify: 10145909        0         0  10145909          0          0.000           0
+
+Non-medium error count:     1155
+
+
+[GLTSD (Global Logging Target Save Disable) set. Enable Save with '-S on']
+SMART Self-test log
+Num  Test              Status                 segment  LifeTime  LBA_first_err [SK ASC ASQ]
+     Description                              number   (hours)
+# 1  Background long   Completed                   -      12                 - [-   -    -]
+Long (extended) Self Test duration: 43349 seconds [722.5 minutes]
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Command smartctl -a /dev/bus/0 -d megaraid,78 
+smartctl 6.2 2013-07-26 r3841 [x86_64-linux-4.14.34-1] (local build)
+Copyright (C) 2002-13, Bruce Allen, Christian Franke, www.smartmontools.org
+
+=== START OF INFORMATION SECTION ===
+Vendor:               SEAGATE
+Product:              ST8000NM0075
+Revision:             E003
+User Capacity:        8,001,563,222,016 bytes [8.00 TB]
+Logical block size:   512 bytes
+Physical block size:  4096 bytes
+Lowest aligned LBA:   0
+Logical block provisioning type unreported, LBPME=0, LBPRZ=0
+Rotation Rate:        7200 rpm
+Form Factor:          3.5 inches
+Logical Unit id:      0x5000c50094c7bd83
+Serial number:        ZA19CSDQ0000R814UWSA
+Device type:          disk
+Transport protocol:   SAS
+Local Time is:        Sat Aug  7 13:10:41 2021 IRDT
+SMART support is:     Available - device has SMART capability.
+SMART support is:     Enabled
+Temperature Warning:  Enabled
+
+=== START OF READ SMART DATA SECTION ===
+SMART Health Status: OK
+
+Current Drive Temperature:     37 C
+Drive Trip Temperature:        60 C
+
+Manufactured in week 43 of year 2017
+Specified cycle count over device lifetime:  10000
+Accumulated start-stop cycles:  151
+Specified load-unload count over device lifetime:  300000
+Accumulated load-unload cycles:  1282
+Elements in grown defect list: 0
+
+Vendor (Seagate) cache information
+  Blocks sent to initiator = 3856293360
+  Blocks received from initiator = 53681848
+  Blocks read from cache and sent to initiator = 1978852143
+  Number of read and write commands whose size <= segment size = 156042672
+  Number of read and write commands whose size > segment size = 491027
+
+Vendor (Seagate/Hitachi) factory information
+  number of hours powered up = 17762.35
+  number of minutes until next internal SMART test = 9
+
+Error counter log:
+           Errors Corrected by           Total   Correction     Gigabytes    Total
+               ECC          rereads/    errors   algorithm      processed    uncorrected
+           fast | delayed   rewrites  corrected  invocations   [10^9 bytes]  errors
+read:   4078144727        0         0  4078144727          0     791423.771           0
+write:         0        0         0         0          0       6635.913           0
+verify: 10132938        0         0  10132938          0          0.000           0
+
+Non-medium error count:      151
+
+
+[GLTSD (Global Logging Target Save Disable) set. Enable Save with '-S on']
+SMART Self-test log
+Num  Test              Status                 segment  LifeTime  LBA_first_err [SK ASC ASQ]
+     Description                              number   (hours)
+# 1  Background long   Completed                   -      13                 - [-   -    -]
+Long (extended) Self Test duration: 43963 seconds [732.7 minutes]
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Command smartctl -a /dev/bus/0 -d megaraid,102 
+smartctl 6.2 2013-07-26 r3841 [x86_64-linux-4.14.34-1] (local build)
+Copyright (C) 2002-13, Bruce Allen, Christian Franke, www.smartmontools.org
+
+=== START OF INFORMATION SECTION ===
+Vendor:               SEAGATE
+Product:              ST8000NM0075
+Revision:             E003
+User Capacity:        8,001,563,222,016 bytes [8.00 TB]
+Logical block size:   512 bytes
+Physical block size:  4096 bytes
+Lowest aligned LBA:   0
+Logical block provisioning type unreported, LBPME=0, LBPRZ=0
+Rotation Rate:        7200 rpm
+Form Factor:          3.5 inches
+Logical Unit id:      0x5000c50094e266ff
+Serial number:        ZA19JMCH0000R817B4RG
+Device type:          disk
+Transport protocol:   SAS
+Local Time is:        Sat Aug  7 13:10:42 2021 IRDT
+SMART support is:     Available - device has SMART capability.
+SMART support is:     Enabled
+Temperature Warning:  Enabled
+
+=== START OF READ SMART DATA SECTION ===
+SMART Health Status: OK
+
+Current Drive Temperature:     35 C
+Drive Trip Temperature:        60 C
+
+Manufactured in week 45 of year 2017
+Specified cycle count over device lifetime:  10000
+Accumulated start-stop cycles:  68
+Specified load-unload count over device lifetime:  300000
+Accumulated load-unload cycles:  10694
+Elements in grown defect list: 0
+
+Vendor (Seagate) cache information
+  Blocks sent to initiator = 1626663648
+  Blocks received from initiator = 4081214344
+  Blocks read from cache and sent to initiator = 2080334374
+  Number of read and write commands whose size <= segment size = 152395616
+  Number of read and write commands whose size > segment size = 461790
+
+Vendor (Seagate/Hitachi) factory information
+  number of hours powered up = 17759.38
+  number of minutes until next internal SMART test = 28
+
+Error counter log:
+           Errors Corrected by           Total   Correction     Gigabytes    Total
+               ECC          rereads/    errors   algorithm      processed    uncorrected
+           fast | delayed   rewrites  corrected  invocations   [10^9 bytes]  errors
+read:   3521235842        0         0  3521235842          0     790282.201           0
+write:         0        0         0         0          0       6498.891           0
+verify: 10132769        0         0  10132769          0          0.000           0
+
+Non-medium error count:      149
+
+
+[GLTSD (Global Logging Target Save Disable) set. Enable Save with '-S on']
+SMART Self-test log
+Num  Test              Status                 segment  LifeTime  LBA_first_err [SK ASC ASQ]
+     Description                              number   (hours)
+# 1  Background long   Completed                   -      13                 - [-   -    -]
+Long (extended) Self Test duration: 42218 seconds [703.6 minutes]
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Command smartctl -a /dev/bus/0 -d megaraid,100 
+smartctl 6.2 2013-07-26 r3841 [x86_64-linux-4.14.34-1] (local build)
+Copyright (C) 2002-13, Bruce Allen, Christian Franke, www.smartmontools.org
+
+=== START OF INFORMATION SECTION ===
+Vendor:               SEAGATE
+Product:              ST8000NM0075
+Revision:             E003
+User Capacity:        8,001,563,222,016 bytes [8.00 TB]
+Logical block size:   512 bytes
+Physical block size:  4096 bytes
+Lowest aligned LBA:   0
+Logical block provisioning type unreported, LBPME=0, LBPRZ=0
+Rotation Rate:        7200 rpm
+Form Factor:          3.5 inches
+Logical Unit id:      0x5000c50094e9acfb
+Serial number:        ZA19KYR80000R817R43R
+Device type:          disk
+Transport protocol:   SAS
+Local Time is:        Sat Aug  7 13:10:42 2021 IRDT
+SMART support is:     Available - device has SMART capability.
+SMART support is:     Enabled
+Temperature Warning:  Enabled
+
+=== START OF READ SMART DATA SECTION ===
+SMART Health Status: OK
+
+Current Drive Temperature:     34 C
+Drive Trip Temperature:        60 C
+
+Manufactured in week 46 of year 2017
+Specified cycle count over device lifetime:  10000
+Accumulated start-stop cycles:  70
+Specified load-unload count over device lifetime:  300000
+Accumulated load-unload cycles:  1254
+Elements in grown defect list: 0
+
+Vendor (Seagate) cache information
+  Blocks sent to initiator = 30305712
+  Blocks received from initiator = 2531341440
+  Blocks read from cache and sent to initiator = 3185161179
+  Number of read and write commands whose size <= segment size = 154140634
+  Number of read and write commands whose size > segment size = 465813
+
+Vendor (Seagate/Hitachi) factory information
+  number of hours powered up = 17785.45
+  number of minutes until next internal SMART test = 3
+
+Error counter log:
+           Errors Corrected by           Total   Correction     Gigabytes    Total
+               ECC          rereads/    errors   algorithm      processed    uncorrected
+           fast | delayed   rewrites  corrected  invocations   [10^9 bytes]  errors
+read:   4170596552        0         0  4170596552          0     800459.982           0
+write:         0        0         0         0          0      14505.716           0
+verify: 10188675        0         0  10188675          0          0.000           0
+
+Non-medium error count:      231
+
+
+[GLTSD (Global Logging Target Save Disable) set. Enable Save with '-S on']
+SMART Self-test log
+Num  Test              Status                 segment  LifeTime  LBA_first_err [SK ASC ASQ]
+     Description                              number   (hours)
+# 1  Background long   Completed                   -      13                 - [-   -    -]
+Long (extended) Self Test duration: 42604 seconds [710.1 minutes]
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Command smartctl -a /dev/bus/0 -d megaraid,80 
+smartctl 6.2 2013-07-26 r3841 [x86_64-linux-4.14.34-1] (local build)
+Copyright (C) 2002-13, Bruce Allen, Christian Franke, www.smartmontools.org
+
+=== START OF INFORMATION SECTION ===
+Vendor:               SEAGATE
+Product:              ST8000NM0075
+Revision:             E003
+User Capacity:        8,001,563,222,016 bytes [8.00 TB]
+Logical block size:   512 bytes
+Physical block size:  4096 bytes
+Lowest aligned LBA:   0
+Logical block provisioning type unreported, LBPME=0, LBPRZ=0
+Rotation Rate:        7200 rpm
+Form Factor:          3.5 inches
+Logical Unit id:      0x5000c50094e9a37f
+Serial number:        ZA19KYZS0000R817Q7LA
+Device type:          disk
+Transport protocol:   SAS
+Local Time is:        Sat Aug  7 13:10:43 2021 IRDT
+SMART support is:     Available - device has SMART capability.
+SMART support is:     Enabled
+Temperature Warning:  Enabled
+
+=== START OF READ SMART DATA SECTION ===
+SMART Health Status: OK
+
+Current Drive Temperature:     34 C
+Drive Trip Temperature:        60 C
+
+Manufactured in week 46 of year 2017
+Specified cycle count over device lifetime:  10000
+Accumulated start-stop cycles:  70
+Specified load-unload count over device lifetime:  300000
+Accumulated load-unload cycles:  1291
+Elements in grown defect list: 0
+
+Vendor (Seagate) cache information
+  Blocks sent to initiator = 3493931504
+  Blocks received from initiator = 4086061384
+  Blocks read from cache and sent to initiator = 4160301553
+  Number of read and write commands whose size <= segment size = 153923554
+  Number of read and write commands whose size > segment size = 462032
+
+Vendor (Seagate/Hitachi) factory information
+  number of hours powered up = 17762.10
+  number of minutes until next internal SMART test = 43
+
+Error counter log:
+           Errors Corrected by           Total   Correction     Gigabytes    Total
+               ECC          rereads/    errors   algorithm      processed    uncorrected
+           fast | delayed   rewrites  corrected  invocations   [10^9 bytes]  errors
+read:   3990900378        0         0  3990900378          0     791238.242           0
+write:         0        0         0         0          0       6500.856           0
+verify: 10163681        0         0  10163681          0          0.000           0
+
+Non-medium error count:      278
+
+
+[GLTSD (Global Logging Target Save Disable) set. Enable Save with '-S on']
+SMART Self-test log
+Num  Test              Status                 segment  LifeTime  LBA_first_err [SK ASC ASQ]
+     Description                              number   (hours)
+# 1  Background long   Completed                   -      13                 - [-   -    -]
+Long (extended) Self Test duration: 41994 seconds [699.9 minutes]
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Command smartctl -a /dev/bus/0 -d megaraid,93 
+smartctl 6.2 2013-07-26 r3841 [x86_64-linux-4.14.34-1] (local build)
+Copyright (C) 2002-13, Bruce Allen, Christian Franke, www.smartmontools.org
+
+=== START OF INFORMATION SECTION ===
+Vendor:               SEAGATE
+Product:              ST8000NM0075
+Revision:             E003
+User Capacity:        8,001,563,222,016 bytes [8.00 TB]
+Logical block size:   512 bytes
+Physical block size:  4096 bytes
+Lowest aligned LBA:   0
+Logical block provisioning type unreported, LBPME=0, LBPRZ=0
+Rotation Rate:        7200 rpm
+Form Factor:          3.5 inches
+Logical Unit id:      0x5000c50094e9a90f
+Serial number:        ZA19KYN10000R817R3MT
+Device type:          disk
+Transport protocol:   SAS
+Local Time is:        Sat Aug  7 13:10:43 2021 IRDT
+SMART support is:     Available - device has SMART capability.
+SMART support is:     Enabled
+Temperature Warning:  Enabled
+
+=== START OF READ SMART DATA SECTION ===
+SMART Health Status: OK
+
+Current Drive Temperature:     33 C
+Drive Trip Temperature:        60 C
+
+Manufactured in week 46 of year 2017
+Specified cycle count over device lifetime:  10000
+Accumulated start-stop cycles:  70
+Specified load-unload count over device lifetime:  300000
+Accumulated load-unload cycles:  1232
+Elements in grown defect list: 0
+
+Vendor (Seagate) cache information
+  Blocks sent to initiator = 2166401696
+  Blocks received from initiator = 2523240864
+  Blocks read from cache and sent to initiator = 2362678933
+  Number of read and write commands whose size <= segment size = 153444020
+  Number of read and write commands whose size > segment size = 466078
+
+Vendor (Seagate/Hitachi) factory information
+  number of hours powered up = 17785.38
+  number of minutes until next internal SMART test = 26
+
+Error counter log:
+           Errors Corrected by           Total   Correction     Gigabytes    Total
+               ECC          rereads/    errors   algorithm      processed    uncorrected
+           fast | delayed   rewrites  corrected  invocations   [10^9 bytes]  errors
+read:   2559483919        0         0  2559483919          0     797155.616           0
+write:         0        0         0         0          0      14502.148           0
+verify: 10144955        0         0  10144955          0          0.000           0
+
+Non-medium error count:      196
+
+
+[GLTSD (Global Logging Target Save Disable) set. Enable Save with '-S on']
+SMART Self-test log
+Num  Test              Status                 segment  LifeTime  LBA_first_err [SK ASC ASQ]
+     Description                              number   (hours)
+# 1  Background long   Completed                   -      13                 - [-   -    -]
+Long (extended) Self Test duration: 43047 seconds [717.5 minutes]
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Command smartctl -a /dev/bus/0 -d megaraid,86 
+smartctl 6.2 2013-07-26 r3841 [x86_64-linux-4.14.34-1] (local build)
+Copyright (C) 2002-13, Bruce Allen, Christian Franke, www.smartmontools.org
+
+=== START OF INFORMATION SECTION ===
+Vendor:               SEAGATE
+Product:              ST8000NM0075
+Revision:             E003
+User Capacity:        8,001,563,222,016 bytes [8.00 TB]
+Logical block size:   512 bytes
+Physical block size:  4096 bytes
+Lowest aligned LBA:   0
+Logical block provisioning type unreported, LBPME=0, LBPRZ=0
+Rotation Rate:        7200 rpm
+Form Factor:          3.5 inches
+Logical Unit id:      0x5000c50094e49277
+Serial number:        ZA19JWKN0000R815Z4SP
+Device type:          disk
+Transport protocol:   SAS
+Local Time is:        Sat Aug  7 13:10:44 2021 IRDT
+SMART support is:     Available - device has SMART capability.
+SMART support is:     Enabled
+Temperature Warning:  Enabled
+
+=== START OF READ SMART DATA SECTION ===
+SMART Health Status: OK
+
+Current Drive Temperature:     35 C
+Drive Trip Temperature:        60 C
+
+Manufactured in week 45 of year 2017
+Specified cycle count over device lifetime:  10000
+Accumulated start-stop cycles:  67
+Specified load-unload count over device lifetime:  300000
+Accumulated load-unload cycles:  1153
+Elements in grown defect list: 0
+
+Vendor (Seagate) cache information
+  Blocks sent to initiator = 1665929040
+  Blocks received from initiator = 3026419616
+  Blocks read from cache and sent to initiator = 1433880956
+  Number of read and write commands whose size <= segment size = 164270049
+  Number of read and write commands whose size > segment size = 461756
+
+Vendor (Seagate/Hitachi) factory information
+  number of hours powered up = 17783.32
+  number of minutes until next internal SMART test = 51
+
+Error counter log:
+           Errors Corrected by           Total   Correction     Gigabytes    Total
+               ECC          rereads/    errors   algorithm      processed    uncorrected
+           fast | delayed   rewrites  corrected  invocations   [10^9 bytes]  errors
+read:   3491119572        0         0  3491119572          0     790302.304           0
+write:         0        0         0         0          0      14759.498           0
+verify: 10151632        0         0  10151632          0          0.000           0
+
+Non-medium error count:      503
+
+
+[GLTSD (Global Logging Target Save Disable) set. Enable Save with '-S on']
+SMART Self-test log
+Num  Test              Status                 segment  LifeTime  LBA_first_err [SK ASC ASQ]
+     Description                              number   (hours)
+# 1  Background long   Completed                   -      12                 - [-   -    -]
+Long (extended) Self Test duration: 41855 seconds [697.6 minutes]
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Command smartctl -a /dev/bus/0 -d megaraid,79 
+smartctl 6.2 2013-07-26 r3841 [x86_64-linux-4.14.34-1] (local build)
+Copyright (C) 2002-13, Bruce Allen, Christian Franke, www.smartmontools.org
+
+=== START OF INFORMATION SECTION ===
+Vendor:               SEAGATE
+Product:              ST8000NM0075
+Revision:             E003
+User Capacity:        8,001,563,222,016 bytes [8.00 TB]
+Logical block size:   512 bytes
+Physical block size:  4096 bytes
+Lowest aligned LBA:   0
+Logical block provisioning type unreported, LBPME=0, LBPRZ=0
+Rotation Rate:        7200 rpm
+Form Factor:          3.5 inches
+Logical Unit id:      0x5000c50094b4e8e7
+Serial number:        ZA197AV40000R8113126
+Device type:          disk
+Transport protocol:   SAS
+Local Time is:        Sat Aug  7 13:10:45 2021 IRDT
+SMART support is:     Available - device has SMART capability.
+SMART support is:     Enabled
+Temperature Warning:  Enabled
+
+=== START OF READ SMART DATA SECTION ===
+SMART Health Status: OK
+
+Current Drive Temperature:     34 C
+Drive Trip Temperature:        60 C
+
+Manufactured in week 43 of year 2017
+Specified cycle count over device lifetime:  10000
+Accumulated start-stop cycles:  12820
+Specified load-unload count over device lifetime:  300000
+Accumulated load-unload cycles:  22813
+Elements in grown defect list: 0
+
+Vendor (Seagate) cache information
+  Blocks sent to initiator = 28470096
+  Blocks received from initiator = 26923344
+  Blocks read from cache and sent to initiator = 1376
+  Number of read and write commands whose size <= segment size = 12713
+  Number of read and write commands whose size > segment size = 0
+
+Vendor (Seagate/Hitachi) factory information
+  number of hours powered up = 17747.13
+  number of minutes until next internal SMART test = 36
+
+Error counter log:
+           Errors Corrected by           Total   Correction     Gigabytes    Total
+               ECC          rereads/    errors   algorithm      processed    uncorrected
+           fast | delayed   rewrites  corrected  invocations   [10^9 bytes]  errors
+read:    4524206        0         0   4524206          0         14.577           0
+write:         0        0         0         0          0        161.263           0
+verify: 11668454        0         0  11668454          0          0.000           0
+
+Non-medium error count:      244
+
+
+[GLTSD (Global Logging Target Save Disable) set. Enable Save with '-S on']
+SMART Self-test log
+Num  Test              Status                 segment  LifeTime  LBA_first_err [SK ASC ASQ]
+     Description                              number   (hours)
+# 1  Background long   Completed                   -      12                 - [-   -    -]
+Long (extended) Self Test duration: 41828 seconds [697.1 minutes]
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Command smartctl -a /dev/bus/0 -d megaraid,84 
+smartctl 6.2 2013-07-26 r3841 [x86_64-linux-4.14.34-1] (local build)
+Copyright (C) 2002-13, Bruce Allen, Christian Franke, www.smartmontools.org
+
+=== START OF INFORMATION SECTION ===
+Vendor:               SEAGATE
+Product:              ST8000NM0075
+Revision:             E003
+User Capacity:        8,001,563,222,016 bytes [8.00 TB]
+Logical block size:   512 bytes
+Physical block size:  4096 bytes
+Lowest aligned LBA:   0
+Logical block provisioning type unreported, LBPME=0, LBPRZ=0
+Rotation Rate:        7200 rpm
+Form Factor:          3.5 inches
+Logical Unit id:      0x5000c50094e52837
+Serial number:        ZA19K2KA0000R816MR0L
+Device type:          disk
+Transport protocol:   SAS
+Local Time is:        Sat Aug  7 13:10:45 2021 IRDT
+SMART support is:     Available - device has SMART capability.
+SMART support is:     Enabled
+Temperature Warning:  Enabled
+
+=== START OF READ SMART DATA SECTION ===
+SMART Health Status: OK
+
+Current Drive Temperature:     33 C
+Drive Trip Temperature:        60 C
+
+Manufactured in week 46 of year 2017
+Specified cycle count over device lifetime:  10000
+Accumulated start-stop cycles:  12744
+Specified load-unload count over device lifetime:  300000
+Accumulated load-unload cycles:  22698
+Elements in grown defect list: 0
+
+Vendor (Seagate) cache information
+  Blocks sent to initiator = 44215888
+  Blocks received from initiator = 27128664
+  Blocks read from cache and sent to initiator = 213
+  Number of read and write commands whose size <= segment size = 12716
+  Number of read and write commands whose size > segment size = 0
+
+Vendor (Seagate/Hitachi) factory information
+  number of hours powered up = 17747.02
+  number of minutes until next internal SMART test = 36
+
+Error counter log:
+           Errors Corrected by           Total   Correction     Gigabytes    Total
+               ECC          rereads/    errors   algorithm      processed    uncorrected
+           fast | delayed   rewrites  corrected  invocations   [10^9 bytes]  errors
+read:    8269193        0         0   8269193          0         22.639           0
+write:         0        0         0         0          0        161.343           0
+verify:  9660584        0         0   9660584          0          0.000           0
+
+Non-medium error count:      194
+
+
+[GLTSD (Global Logging Target Save Disable) set. Enable Save with '-S on']
+SMART Self-test log
+Num  Test              Status                 segment  LifeTime  LBA_first_err [SK ASC ASQ]
+     Description                              number   (hours)
+# 1  Background long   Completed                   -      12                 - [-   -    -]
+Long (extended) Self Test duration: 42918 seconds [715.3 minutes]
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

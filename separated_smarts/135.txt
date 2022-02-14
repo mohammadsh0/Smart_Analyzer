@@ -1,0 +1,78 @@
+Command smartctl -a /dev/bus/0 -d megaraid,135
+smartctl 6.2 2013-07-26 r3841 [x86_64-linux-3.10.0-327.36.3.el7.x86_64] (local build)
+Copyright (C) 2002-13, Bruce Allen, Christian Franke, www.smartmontools.org
+
+=== START OF INFORMATION SECTION ===
+Vendor:               SEAGATE
+Product:              ST8000NM0075
+Revision:             E003
+User Capacity:        8,001,563,222,016 bytes [8.00 TB]
+Logical block size:   512 bytes
+Physical block size:  4096 bytes
+Lowest aligned LBA:   0
+Logical block provisioning type unreported, LBPME=0, LBPRZ=0
+Rotation Rate:        7200 rpm
+Form Factor:          3.5 inches
+Logical Unit id:      0x5000c50094cb199b
+Serial number:        ZA19E5PX0000R814FHNH
+Device type:          disk
+Transport protocol:   SAS
+Local Time is:        Sun Nov  7 14:29:02 2021 IRST
+SMART support is:     Available - device has SMART capability.
+SMART support is:     Enabled
+Temperature Warning:  Enabled
+
+=== START OF READ SMART DATA SECTION ===
+SMART Health Status: OK
+
+Current Drive Temperature:     34 C
+Drive Trip Temperature:        60 C
+
+Manufactured in week 43 of year 2017
+Specified cycle count over device lifetime:  10000
+Accumulated start-stop cycles:  197
+Specified load-unload count over device lifetime:  300000
+Accumulated load-unload cycles:  2576
+Elements in grown defect list: 0
+
+Vendor (Seagate) cache information
+Blocks sent to initiator = 3802983624
+Blocks received from initiator = 3726892160
+Blocks read from cache and sent to initiator = 1997221650
+Number of read and write commands whose size <= segment size = 138287883
+Number of read and write commands whose size > segment size = 200820
+
+Vendor (Seagate/Hitachi) factory information
+number of hours powered up = 11543.38
+number of minutes until next internal SMART test = 12
+
+Error counter log:
+Errors Corrected by           Total   Correction     Gigabytes    Total
+ECC          rereads/    errors   algorithm      processed    uncorrected
+fast | delayed   rewrites  corrected  invocations   [10^9 bytes]  errors
+read:   4106080156        0         0  4106080156          0     175669.965           0
+write:         0        0         0         0          0      17317.935           0
+verify:  1090601        0         0   1090601          0          0.000           0
+
+Non-medium error count:      180
+
+
+[GLTSD (Global Logging Target Save Disable) set. Enable Save with '-S on']
+SMART Self-test log
+Num  Test              Status                 segment  LifeTime  LBA_first_err [SK ASC ASQ]
+Description                              number   (hours)
+# 1  Background long   Completed                   -    1288                 - [-   -    -]
+# 2  Background long   Completed                   -    1226                 - [-   -    -]
+# 3  Background long   Completed                   -    1109                 - [-   -    -]
+# 4  Background long   Completed                   -     965                 - [-   -    -]
+# 5  Background long   Completed                   -     896                 - [-   -    -]
+# 6  Background long   Completed                   -     876                 - [-   -    -]
+# 7  Background long   Completed                   -     846                 - [-   -    -]
+# 8  Background long   Aborted (device reset ?)    -     589                 - [-   -    -]
+# 9  Background long   Completed                   -     506                 - [-   -    -]
+#10  Background long   Completed                   -     370                 - [-   -    -]
+#11  Background long   Completed                   -     198                 - [-   -    -]
+#12  Background long   Completed                   -      14                 - [-   -    -]
+Long (extended) Self Test duration: 42971 seconds [716.2 minutes]
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

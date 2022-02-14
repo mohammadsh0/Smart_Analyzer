@@ -1,0 +1,418 @@
+{
+    "luns": [],
+    "access_controls": [
+        {
+            "luns": [],
+            "hosts": [
+                {
+                    "initiators": [
+                        {
+                            "enabled": true,
+                            "state": "Disconnected",
+                            "type": "Fiber Channel",
+                            "name": "50:01:43:80:74:ab:7a:42",
+                            "target": "51:40:2e:c0:01:c2:a6:ae"
+                        }
+                    ],
+                    "ip": "",
+                    "name": "Win-Host",
+                    "access_control": "Ac1"
+                }
+            ],
+            "name": "Ac1"
+        }
+    ],
+    "users": [
+        {
+            "UUID": null,
+            "ip": "192.168.200.216",
+            "role_name": "admin",
+            "forgot_password_time": null,
+            "user_name": "sabadmin",
+            "email": "admin@hpds.ir"
+        },
+        {
+            "UUID": null,
+            "ip": null,
+            "role_name": "admin",
+            "forgot_password_time": null,
+            "user_name": "test",
+            "email": "t@r"
+        },
+        {
+            "UUID": null,
+            "ip": null,
+            "role_name": "admin",
+            "forgot_password_time": null,
+            "user_name": "test1",
+            "email": "t@parsa"
+        }
+    ],
+    "roles": [
+        {
+            "role_name": "Host Admin",
+            "id": 4
+        },
+        {
+            "role_name": "Operator",
+            "id": 2
+        },
+        {
+            "role_name": "Storage Admin",
+            "id": 3
+        },
+        {
+            "role_name": "admin",
+            "id": 1
+        }
+    ],
+    "smtp": {},
+    "emails": [],
+    "pools": [
+        {
+            "name": "pool",
+            "raid_level": "RAID0"
+        }
+    ],
+    "hosts": [
+        {
+            "ip": null,
+            "id": 1,
+            "name": "Win-Host"
+        }
+    ],
+    "initiators": [
+        {
+            "target_name": "51:40:2e:c0:01:c2:a6:ac",
+            "type": "FC",
+            "id": 1,
+            "initiator_name": "50:01:43:80:74:ab:7a:54"
+        },
+        {
+            "target_name": "51:40:2e:c0:01:c2:a6:ae",
+            "type": "FC",
+            "id": 3,
+            "initiator_name": "50:01:43:80:74:ab:7a:42"
+        },
+        {
+            "target_name": "51:40:2e:c0:01:c2:a6:ae",
+            "type": "FC",
+            "id": 4,
+            "initiator_name": "50:01:43:80:74:ab:7a:40"
+        }
+    ],
+    "hosts_inis": [
+        {
+            "target_name": "51:40:2e:c0:01:c2:a6:ae",
+            "initiator_name": "50:01:43:80:74:ab:7a:42",
+            "host_name": "Win-Host"
+        }
+    ],
+    "roles_perms": [
+        {
+            "name": "admin",
+            "permission": [
+                "all"
+            ]
+        },
+        {
+            "name": "Operator",
+            "permission": [
+                "Pool-View",
+                "Lun-View",
+                "Rapidstore-View",
+                "Hotspare-View",
+                "Host-View",
+                "AccessControl-View",
+                "Network-View",
+                "Iscsi-View",
+                "Smtp-View",
+                "HardwareStatus-View",
+                "PM-View",
+                "Event-View",
+                "UserRole-View",
+                "System-View"
+            ]
+        },
+        {
+            "name": "Storage Admin",
+            "permission": [
+                "Pool",
+                "Lun",
+                "Rapidstore",
+                "Hotspare"
+            ]
+        },
+        {
+            "name": "Host Admin",
+            "permission": [
+                "Host",
+                "AccessControl",
+                "Iscsi"
+            ]
+        }
+    ],
+    "events": [
+        {
+            "event_type": "Reboot",
+            "read": false,
+            "ip": null,
+            "user": "SysCheck",
+            "detailed_description": "The system booted at 2021-09-11 09:42:31",
+            "message": "The system booted at 2021-09-11 09:42:31",
+            "insertion_time": "2021-09-11T09:42:31",
+            "event_subsys": "Maintenance"
+        },
+        {
+            "event_type": "Information",
+            "read": false,
+            "ip": null,
+            "user": "Monitoring",
+            "detailed_description": "OS RAID added to SAB storage system.",
+            "message": "OS RAID added to SAB storage system.",
+            "insertion_time": "2021-09-11T09:48:31.261149",
+            "event_subsys": "Storage Pool"
+        },
+        {
+            "event_type": "Information",
+            "read": false,
+            "ip": null,
+            "user": "Monitoring",
+            "detailed_description": "NAS server \"SMB2\" was added to SAB storage system.\nNetwork Interface:enp7s0f2\nNetBios:net2\nWorkgroup:WORKGROUP2\n",
+            "message": "NAS server \"SMB2\" was added to SAB storage system.",
+            "insertion_time": "2021-09-11T09:49:25.543368",
+            "event_subsys": "NAS"
+        },
+        {
+            "event_type": "Information",
+            "read": false,
+            "ip": null,
+            "user": "Monitoring",
+            "detailed_description": "NAS server \"SMB3\" was added to SAB storage system.\nNetwork Interface:enp7s0f3\nNetBios:net3\nWorkgroup:WORKGROUP3\n",
+            "message": "NAS server \"SMB3\" was added to SAB storage system.",
+            "insertion_time": "2021-09-11T09:49:25.611714",
+            "event_subsys": "NAS"
+        },
+        {
+            "event_type": "Information",
+            "read": false,
+            "ip": null,
+            "user": "Monitoring",
+            "detailed_description": "IP address of Primary network interface changed. \nOld IP : 1.1.1.1\nNew IP: 172.20.12.200",
+            "message": "IP address of Primary network interface changed.",
+            "insertion_time": "2021-09-11T13:48:23.071161",
+            "event_subsys": "iSCSI"
+        },
+        {
+            "event_type": "Information",
+            "read": false,
+            "ip": null,
+            "user": "Monitoring",
+            "detailed_description": "Netmask address of Primary network interface changed.\nOld Netmask: 1.1.1.1/26\nNew Netmask: 172.20.12.200/24",
+            "message": "Netmask address of Primary network interface changed.",
+            "insertion_time": "2021-09-11T13:48:23.114606",
+            "event_subsys": "Network"
+        },
+        {
+            "event_type": "Information",
+            "read": false,
+            "ip": "192.168.192.66",
+            "user": "sabadmin",
+            "detailed_description": "The user \"sabadmin\" was successfully logged in sabadmin.\nUser Name: sabadmin\nIP Address: 192.168.192.66\nLogin Date and Time: 09-11-2021 13:49:28",
+            "message": "User \"sabadmin\" was logged in .",
+            "insertion_time": "2021-09-11T13:49:28.537032",
+            "event_subsys": "User and Role"
+        },
+        {
+            "event_type": "Information",
+            "read": false,
+            "ip": "192.168.192.66",
+            "user": "sabadmin",
+            "detailed_description": "Creation of Host Win-Host finished successfully.\nIP:None\nAdded initiators: (50:01:43:80:74:ab:7a:42, 51:40:2e:c0:01:c2:a6:ae) ",
+            "message": "Creation of Host 'Win-Host' finished successfully.",
+            "insertion_time": "2021-09-11T15:21:47.217013",
+            "event_subsys": "Host Info"
+        },
+        {
+            "event_type": "Information",
+            "read": false,
+            "ip": "192.168.192.66",
+            "user": "sabadmin",
+            "detailed_description": "Creation of Access Control Acc1 finished successfully.\nIt contains:\nHosts: Win-Host\nLUNs: farabo_lun",
+            "message": "Creation of Access Control Acc1 finished successfully.",
+            "insertion_time": "2021-09-11T15:25:08.707498",
+            "event_subsys": "Access Control"
+        },
+        {
+            "event_type": "Reboot",
+            "read": false,
+            "ip": null,
+            "user": "SysCheck",
+            "detailed_description": "The system booted at 2021-09-20 14:57:56",
+            "message": "The system booted at 2021-09-20 14:57:56",
+            "insertion_time": "2021-09-20T14:57:56",
+            "event_subsys": "Maintenance"
+        },
+        {
+            "event_type": "Reboot",
+            "read": false,
+            "ip": null,
+            "user": "SysCheck",
+            "detailed_description": "The system booted at 2021-09-15 13:59:07",
+            "message": "The system booted at 2021-09-15 13:59:07",
+            "insertion_time": "2021-09-15T13:59:07",
+            "event_subsys": "Maintenance"
+        },
+        {
+            "event_type": "Reboot",
+            "read": false,
+            "ip": null,
+            "user": "SysCheck",
+            "detailed_description": "The system booted at 2021-09-15 13:49:39",
+            "message": "The system booted at 2021-09-15 13:49:39",
+            "insertion_time": "2021-09-15T13:49:39",
+            "event_subsys": "Maintenance"
+        },
+        {
+            "event_type": "Information",
+            "read": false,
+            "ip": "192.168.192.59",
+            "user": "sabadmin",
+            "detailed_description": "The user \"sabadmin\" was successfully logged in sabadmin.\nUser Name: sabadmin\nIP Address: 192.168.192.59\nLogin Date and Time: 09-28-2021 08:51:40",
+            "message": "User \"sabadmin\" was logged in .",
+            "insertion_time": "2021-09-28T08:51:40.995370",
+            "event_subsys": "User and Role"
+        },
+        {
+            "event_type": "Information",
+            "read": false,
+            "ip": "192.168.192.59",
+            "user": "sabadmin",
+            "detailed_description": "The storage pool has been successfully created.\nPool Name: pool\nPool Size: 14.55 TB\nRAID Mode: 0",
+            "message": "Storage pool \"pool\" has been created.",
+            "insertion_time": "2021-09-28T08:52:50.610375",
+            "event_subsys": "Storage Pool"
+        },
+        {
+            "event_type": "Information",
+            "read": false,
+            "ip": "192.168.192.59",
+            "user": "sabadmin",
+            "detailed_description": "Created LUNs:\n\n  LUN name: 'lun1', Size: 100.00 GB, ID: 1",
+            "message": "LUN lun1 has been created successfully.",
+            "insertion_time": "2021-09-28T08:53:24.152177",
+            "event_subsys": "Storage LUN"
+        },
+        {
+            "event_type": "Information",
+            "read": false,
+            "ip": "192.168.192.59",
+            "user": "sabadmin",
+            "detailed_description": "The rapidstore cache has been successfully created for the storage pool.\nPool Name: pool\nNumber of Cache Slots: 1",
+            "message": "Rapidstore cache for storage pool \"pool\" has been created.",
+            "insertion_time": "2021-09-28T09:09:22.478978",
+            "event_subsys": "RapidStore"
+        },
+        {
+            "event_type": "Information",
+            "read": false,
+            "ip": "192.168.192.59",
+            "user": "sabadmin",
+            "detailed_description": "UI updated successfully.\nOld version:2.11.0\nNew Version:2.13.0rc1",
+            "message": "UI version 2.11.0 updated to version 2.13.0rc1 successfully.",
+            "insertion_time": "2021-09-28T14:51:58.843847",
+            "event_subsys": "Maintenance"
+        },
+        {
+            "event_type": "Information",
+            "read": false,
+            "ip": "192.168.192.59",
+            "user": "sabadmin",
+            "detailed_description": "The user was successfully logged out.\nUser Name: sabadmin\nIP Address: 192.168.192.59\nLogout Date and Time: 09-28-2021 14:51:59",
+            "message": "User \"sabadmin\" was logged out.",
+            "insertion_time": "2021-09-28T14:51:59.151214",
+            "event_subsys": "User and Role"
+        },
+        {
+            "event_type": "Information",
+            "read": false,
+            "ip": null,
+            "user": "Monitoring",
+            "detailed_description": "OS RAID added to SAB storage system.",
+            "message": "OS RAID added to SAB storage system.",
+            "insertion_time": "2021-09-28T14:54:32.068165",
+            "event_subsys": "Storage Pool"
+        },
+        {
+            "event_type": "Information",
+            "read": false,
+            "ip": "192.168.192.59",
+            "user": "sabadmin",
+            "detailed_description": "The user \"sabadmin\" was successfully logged in sabadmin.\nUser Name: sabadmin\nIP Address: 192.168.192.59\nLogin Date and Time: 09-28-2021 15:01:41",
+            "message": "User \"sabadmin\" was logged in .",
+            "insertion_time": "2021-09-28T15:01:42.341101",
+            "event_subsys": "User and Role"
+        },
+        {
+            "event_type": "Information",
+            "read": false,
+            "ip": "192.168.192.59",
+            "user": "sabadmin",
+            "detailed_description": "The user \"sabadmin\" was successfully logged in sabadmin.\nUser Name: sabadmin\nIP Address: 192.168.192.59\nLogin Date and Time: 09-28-2021 15:10:41",
+            "message": "User \"sabadmin\" was logged in .",
+            "insertion_time": "2021-09-28T15:10:42.424735",
+            "event_subsys": "User and Role"
+        },
+        {
+            "event_type": "Information",
+            "read": false,
+            "ip": "192.168.192.59",
+            "user": "sabadmin",
+            "detailed_description": "The user account has been successfully created.\nUser Account Name: test",
+            "message": "A new user account \"test\" has been created.",
+            "insertion_time": "2021-09-28T15:16:00.612075",
+            "event_subsys": "User and Role"
+        },
+        {
+            "event_type": "Information",
+            "read": false,
+            "ip": "192.168.192.59",
+            "user": "sabadmin",
+            "detailed_description": "The user account has been successfully created.\nUser Account Name: test1",
+            "message": "A new user account \"test1\" has been created.",
+            "insertion_time": "2021-09-28T15:20:23.241187",
+            "event_subsys": "User and Role"
+        },
+        {
+            "event_type": "Information",
+            "read": false,
+            "ip": "192.168.192.59",
+            "user": "sabadmin",
+            "detailed_description": "LUN has been successfully deleted.\n lun1 on pool:pool",
+            "message": "LUN \"lun1\" has been deleted.",
+            "insertion_time": "2021-09-28T16:48:27.600014",
+            "event_subsys": "Storage LUN"
+        },
+        {
+            "event_type": "Information",
+            "read": false,
+            "ip": "192.168.192.59",
+            "user": "sabadmin",
+            "detailed_description": "The rapidstore cache of storage pool has been successfully deleted.\nPool Name: pool",
+            "message": "Rapidstore cache of storage pool \"pool\" has been deleted.",
+            "insertion_time": "2021-09-28T16:48:50.528873",
+            "event_subsys": "RapidStore"
+        },
+        {
+            "event_type": "Information",
+            "read": false,
+            "ip": "192.168.200.216",
+            "user": "sabadmin",
+            "detailed_description": "The user \"sabadmin\" was successfully logged in sabadmin.\nUser Name: sabadmin\nIP Address: 192.168.200.216\nLogin Date and Time: 09-28-2021 16:48:55",
+            "message": "User \"sabadmin\" was logged in .",
+            "insertion_time": "2021-09-28T16:48:55.976858",
+            "event_subsys": "User and Role"
+        }
+    ],
+    "recievers": []
+}

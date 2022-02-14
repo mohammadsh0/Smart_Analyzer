@@ -1,0 +1,28 @@
+Command smartctl -a /dev/bus/0 -d megaraid,153
+smartctl 6.2 2013-07-26 r3841 [x86_64-linux-3.10.0-327.36.3.el7.x86_64] (local build)
+Copyright (C) 2002-13, Bruce Allen, Christian Franke, www.smartmontools.org
+
+=== START OF INFORMATION SECTION ===
+Vendor:               SEAGATE
+Product:              ST8000NM0075
+Revision:             E003
+User Capacity:        8,001,563,222,016 bytes [8.00 TB]
+Logical block size:   512 bytes
+Physical block size:  4096 bytes
+Lowest aligned LBA:   0
+Logical block provisioning type unreported, LBPME=0, LBPRZ=0
+Rotation Rate:        7200 rpm
+Form Factor:          3.5 inches
+Logical Unit id:      0x5000c50094b2518b
+Serial number:        ZA1973J90000R8112R10
+Device type:          disk
+Transport protocol:   SAS
+Local Time is:        Sun Nov  7 14:28:54 2021 IRST
+SMART support is:     Unavailable - device lacks SMART capability.
+
+=== START OF READ SMART DATA SECTION ===
+
+Error Counter logging not supported
+
+Device does not support Self Test logging
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
