@@ -99,14 +99,14 @@ class Smart():
                     self.disk_param[item]['Disk_type'] = 'SSD'
 
 
-my_hdds = Smart()
-my_hdds.read_smart("./smarts.mylinux")
-# my_hdds.read_smart("/mnt/c/Users/Mohammad/Desktop/Programming/smart_analyzer/smarts.mylinux")
-my_hdds.divider()
-my_hdds.extract()
-# for line in my_hdds.all_disks[26]:
+my_disks = Smart()
+my_disks.read_smart("./smarts.mylinux")
+# my_disks.read_smart("/mnt/c/Users/Mohammad/Desktop/Programming/smart_analyzer/smarts.mylinux")
+my_disks.divider()
+my_disks.extract()
+# for line in my_disks.all_disks[26]:
     # print(line)
-my_hdds.save_to_dir()
-my_hdds.device_type()
-for k,v in my_hdds.disk_param.items():
+my_disks.save_to_dir()
+my_disks.device_type()
+for k,v in my_disks.disk_param.items():
     print(k,v)
