@@ -7,21 +7,21 @@ class Smart():
     
     def __init__(self):
         # list of Device Id's
-        self.devID = list()
+        self.devID = []
         # list of all of the lines in smart file
-        self.smart_list = list()
+        self.smart_list = []
         # list of every line starting with a new smart disk data
-        self.disk_start_line = list()
+        self.disk_start_line = []
         # The separated list of all disk smart's data
-        self.all_disks = list()
+        self.all_disks = []
         # A dict containing all disks with each disk's parmaters
         # being stored in a nested dict.
-        self.disk_param = dict()
+        self.disk_param = {}
 
     def read_smart(self, smart_file):
         """reads smarts file"""
         temp = ''
-        
+
         # Reading smart file into a list.
         with open(smart_file, 'r') as smartslinux:
             smart = smartslinux.readlines()
@@ -33,15 +33,12 @@ class Smart():
         # -(In the divider method)
         for line in self.smart_list:
             if 'Command smartctl -a' in line:
-                temp = ''
-                for char in line:
-                    if char in string.digits:
-                        temp += char
+                temp = ''.join(char for char in line if char in string.digits)
                 self.devID.append(temp[1:])
 
         # Creating a list of lists, and later using it to store each
         # disk's smart data into a sublist of this list. (In the extract method)
-        for i in range(len(self.devID)):
+        for _ in range(len(self.devID)):
             self.all_disks.append([])
 
     def divider(self):
@@ -74,9 +71,7 @@ class Smart():
         II. Saves each smart file into a file named after devID."""
         current_path = os.getcwd()
         isdir = os.path.isdir(f'{current_path}/separated_smarts/')
-        if isdir:
-            pass
-        else:
+        if not isdir:
             os.mkdir(f'{current_path}/separated_smarts')
         self.smarts_path = f'{os.getcwd()}/separated_smarts'
 
@@ -89,24 +84,24 @@ class Smart():
     def device_type(self):
         """Determines the disk type."""
 
-        for k,item in enumerate(self.devID):
-            self.disk_param[item] = dict()
-            
-        for k,item in enumerate(self.devID):
+        for item in self.devID:
+            self.disk_param[item] = {}
+
+        for item in self.devID:
             with open(f'{self.smarts_path}/{item}.txt', 'r') as smart:
                 smart_file = smart.readlines()
             for line in smart_file:
                 if 'Device type:          disk' in line:
                     self.disk_param[item]['Disk_type'] = 'HDD'
-                    
+
                     break
                 else:
                     self.disk_param[item]['Disk_type'] = 'SSD'
 
 
 my_hdds = Smart()
-# my_hdds.read_smart("C:\\Users\Mohammad\Desktop\Programming\Smart Analyzer\smarts.mylinux")
-my_hdds.read_smart("/mnt/c/Users/Mohammad/Desktop/Programming/smart_analyzer/smarts.mylinux")
+my_hdds.read_smart("./smarts.mylinux")
+# my_hdds.read_smart("/mnt/c/Users/Mohammad/Desktop/Programming/smart_analyzer/smarts.mylinux")
 my_hdds.divider()
 my_hdds.extract()
 # for line in my_hdds.all_disks[26]:
